@@ -55,3 +55,6 @@
 # Instalacion de exensiones
 # Primer programa: Print ("Hola Mundo") (cadena de string)  y ejecucion de programa
 print ("hola mundo")
+
+#saludar con python - Ejercicio propuesto:
+#Escribir un programa que muestre por pantalla la cadena ¡Hola Mundo!. print ("Este es mi salude con python")
