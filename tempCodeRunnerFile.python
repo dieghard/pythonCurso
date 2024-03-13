@@ -1,0 +1,7 @@
+condicion = True
+
+if condicion :
+  print("La condicion es verdadera")
+
+else :
+  print("La condicion es falsa")

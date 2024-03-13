@@ -115,6 +115,7 @@ else:
 #? 2-Se solicita realizar un programa para mostrar el resultado de la division de dos números enteros
 #? 3-Se solicita realizar un programa para mostrar si el numero es positivo o negativo
 #? 4-Se solicita realizar un programa que pida la edad de una persona y determine si es mayor o menor de edad (18)
+
 #OPERADORES LOGICOS
 # AND (y) devuelve true si ambos valores son verdaderos
 # OR (o) devuelve true si al menos uno de los valores es verdadero
@@ -143,6 +144,7 @@ print (f"el resultado es: {resultado}")
 a = True
 resultado = (not a)
 print (f"el resultado es: {resultado}")
+
 #!Ejercicio Propuesto
 #Dado un numero determine si es se encuentra entre 0 y 10
 valor = int(input("Ingrese un numero: "))
@@ -160,13 +162,29 @@ else:
 
 #Ejemplo NOT (mismo ejercicio pero invierta el resultado)
 
-#Crear un programa que permita al usuario ingresar su edad y determine si esta entre los 20 (de 20 a 30 años) y los 40 años(de 40 a 50 años) .
+#!Crear un programa que permita al usuario ingresar su edad y determine si esta entre los 20 (de 20 a 30 años) y los 40 años(de 40 a 50 años) .
 
-#crear un progrmaa que permita que usuario ingrese dos numeros enteeros y nos imprima cual es el mayor de los dos numeros ingresados
+#!crear un progrmaa que permita que usuario ingrese dos numeros enteeros y nos imprima cual es el mayor de los dos numeros ingresados
 #MOSTRAR DEBUGGER
-#Crear un programa que permita ingresar un libro y su autoo, muestre el precio (float) y deje escribir si el envio es gratis(true o false)
+
+#!TIENDA DE LIBROS: Crear un programa que permita ingresar un libro y su autor, muestre el precio (float) y deje escribir si el envio es gratis(true o false)
 # para imprimir toda la info utilizar el print
 print (f'''
        Hola mundo, aca se puede imprimir
        respetando los enter y los tabluladores.
        ''')
+
+libro = input('Ingrese el nombre del libro:')
+autor = input('Ingrese el nombre del autor:')
+precio = float(input('Ingrese el precio:'))
+envioGratis = input('¿El envio es gratis?/("SI") o ("NO")')
+
+if envioGratis != "SI" and envioGratis != "NO":  envioGratis="SI"
+print (f'''
+       Libro  : {libro}
+       Auto   : {autor}
+       Precio : {precio}
+      envio es gratis: {envioGratis}
+       ''')
+
+
