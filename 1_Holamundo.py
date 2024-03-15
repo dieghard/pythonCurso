@@ -2,10 +2,8 @@
 # -¿que es python?
 # Python es un lenguaje de programación de código abierto, creado por Guido van Rossum en 1991.
 # Se trata de un lenguaje orientado a objetos, fácil de interpretar y con una sintaxis que permite leerlo de manera semejante a como se # lee el inglés.
-# Es un lenguaje interpretado, esto significa que el código de programación se convierte en bytecode y luego se ejecuta por el
-#  intérprete, que, en este caso, es la máquina virtual de Python.
-# El bytecode es un tipo de código de programa que se compila y ejecuta en sistemas informáticos llamados VM (máquinas virtuales, por
-# sus siglas en inglés). Los programadores pueden usar el bytecode en su forma original en cualquier plataforma en la que opere la VM,
+# Es un lenguaje interpretado, esto significa que el código de programación se convierte en bytecode y luego se ejecuta por # el intérprete, que, en este caso, es la máquina virtual de Python.
+# El bytecode es un tipo de código de programa que se compila y ejecuta en sistemas informáticos llamados VM (máquinas virtuales, por sus siglas en inglés). Los programadores pueden usar el bytecode en su forma original en cualquier plataforma en la que opere la VM,
 # por lo que el código es independiente de la plataforma. También es intermedio, ya que sus funciones están a medio camino entre el
 # código fuente y el código máquina. El bytecode también se conoce como código portable o P-Code.
 # - Para que sirve?
