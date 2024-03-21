@@ -1,17 +1,5 @@
 # TIPOS DE DATOS EN PYTHON
-# En Python, los tipos de datos son esenciales para organizar y manipular información. Dominarlos es crucial para escribir código eficiente y preciso. En esta guía, exploraremos los tipos de datos básicos y avanzados, sus características y ejemplos prácticos para ayudarte a dominar este tema fundamental.
-#Tipos de datos básicos:
-#Numéricos:
-#-Enteros (int): Números sin decimales, como 1, 2, 3. Ejemplo: edad = 25
-#-Punto flotante (float): Números con decimales, como 3.14, 1.5. Ejemplo: precio = 12.99
-#-Complejos (complex): Números con parte real e imaginaria, como 1+2j. Ejemplo: z = 1 + 2j
-#-Cadenas (str): Secuencias de caracteres, como "Hola mundo", "Python 3". Ejemplo: nombre = "Juan Pérez"
-#-Booleanos (bool): Valores True o False que representan condiciones. Ejemplo: esta_activo = True
-#-Tipos de datos avanzados:
-#-Listas (list): Colecciones ordenadas y mutables de cualquier tipo de dato. Ejemplo: lista_nombres = ["Ana", "Pedro", "María"]
-#-Tuplas (tuple): Colecciones ordenadas e inmutables de cualquier tipo de dato. Ejemplo: coordenadas = (10, 20, 30)
-#-Diccionarios (dict): Colecciones no ordenadas que mapean claves a valores. Ejemplo: diccionario_edades = {"Ana": 25, "Pedro": 30}
-#-Conjuntos (set): Colecciones no ordenadas y sin duplicados de cualquier tipo de dato. Ejemplo: conjunto_colores = {"azul",  "verde", "rojo"}
+
 #Todos los tipos de datos son almacenados en python como clases
  #Entero como martillo para construir una estructura
 edad = 25  # Un valor entero para la edad
@@ -22,6 +10,20 @@ print(type(precio)) # permite ver el tipo de variable
 # Cadena como llave inglesa para unir piezas
 nombre: str = "Ana Pérez"  # Un valor de cadena para el nombre
 #nombre: str los : y el str es un "hint" para decir de que tipo de datos es la variable pero solo es una "PISTA" no es obligatorio, ya que las variables en python son dinamicas.
+
+cadena = "volvemos a empezar, tene cuidado que "  # Una cadena de texto
+print(type(cadena)) # permite ver el tipo de variable
+print (cadena * 3)  # multiplicar la cadena por 3
+# mostramos una parte de la variable cadena
+nombre: str = "Ana Pérez"  # Un valor de cadena para el nombre
+print(nombre[0:3]) # muestra los primeros 3 caracteres
+# mostramos una parte de la variable cadena
+nombre: str = "Ana Pérez"  # Un valor de cadena para el nombre
+print(nombre[-5:10]) # muestra  el apellido
+
+# mostramos una parte de la variable cadena
+nombre: str = "Ana Pérez"  # Un valor de cadena para el nombre
+print(nombre[0:4]) # muestra  el nombre
 # Booleano como interruptor para controlar el flujo
 esta_activo = True  # Un valor booleano para indicar si está activo
 print(type(esta_activo))
@@ -30,9 +32,6 @@ nombres = ["Ana", "Pedro", "María"]  # Una lista de nombres
 print(type(nombres))
 # Diccionario como manual de instrucciones para buscar información
 diccionario_edades = {"Ana": 25, "Pedro": 30}  # Un diccionario con edades
-
-#Código en Python para ejemplos de tipos de datos:
-#Analogías:
 
 # Entero como martillo para construir una estructura
 edad = 25  # Un valor entero para la edad
@@ -46,19 +45,14 @@ esta_activo = True  # Un valor booleano para indicar si está activo
 nombres = ["Ana", "Pedro", "María"]  # Una lista de nombres
 # Diccionario como manual de instrucciones para buscar información
 diccionario_edades = {"Ana": 25, "Pedro": 30}  # Un diccionario con edades
-#!==============================================================================
-#Ejemplos de errores:
-#!==============================================================================
-# ERRORES
-# Error: usar un entero para almacenar un precio con decimales
-precio_entero = 12.99  # Esto puede generar resultados inexactos
+
 
 # Error: usar una cadena para realizar cálculos matemáticos
 suma_cadenas = "1" + "2"  # Esto genera un error de tipo
 
 # Error: usar un booleano para almacenar una lista de nombres
 lista_booleana = True, False, True  # Esto genera un error de tipo
-lista_booleana =true # false pq va en Mayuscula
+lista_booleana = true # false pq va en Mayuscula
 #?==============================================================================
 # *   Manejo de cadenas
 #?==============================================================================
@@ -67,7 +61,6 @@ print(miGrupoFavorito)
 print(type(miGrupoFavorito))
 #? Union/concatenacion  de cadenas con el simbolo + al ser string une cadenas de texto (no suma)
 print("Mi grupo favorito es: " + miGrupoFavorito)
-
 miGrupoFavorito: str = "El Chaqueño Palavecino"
 comentario = "Hace musica folclorica"
 print(miGrupoFavorito + " " + comentario)
