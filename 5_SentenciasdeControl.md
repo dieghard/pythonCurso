@@ -4,33 +4,31 @@
 
 > La sentencia if se utiliza para ejecutar un bloque de código si una condición es verdadera. Si la condición es falsa, el bloque no se ejecuta.
 
-```
-edad = 20
+```edad = 20
 if edad >= 18:
     print("Eres mayor de edad.")
 ```
 
 - if-else:
+
   > Uso: Se utiliza para tomar decisiones en el código, ejecutando un bloque de código si una condición es verdadera, y otro bloque si la condición es falsa.
   > Ejemplo: Puedes usarlo para verificar si un usuario tiene la edad suficiente para acceder a ciertas funciones de tu programa.
 
-* otro ejemplo :
+- otro ejemplo :
 
-```
-edad = 15
+```edad = 15
 if edad >= 18:
 print("Eres mayor de edad.")
 else:
 print("Eres menor de edad.")
 ```
 
-- elif:
+- _elif_:
 
 > Uso: Se utiliza para evaluar múltiples condiciones en orden. Si la condición del if es falsa, se verifica la siguiente condición en elif.
 > Ejemplo: Puedes usarlo para asignar una calificación a un estudiante basándote en su puntuación.
 
-```
-nota = 75
+```nota = 75
 
 if nota >= 90:
   print("Excelente")
@@ -40,10 +38,9 @@ else:
   print("Necesitas mejorar")
 ```
 
-- !IF ELSE
+- _!IF ELSE_
 
-```
-condicion = "ddd"
+```condicion = "ddd"
 if condicion :
   print("La condicion es verdadera")
 else :
@@ -60,8 +57,7 @@ else :
 - otro ejemplo
   > crear un programa que pase de numeros a texto : 1 = Uno, 2 = Dos, 3 = Tres
 
-```
-numero = int(input("Escribe un numero entre 1 y 3: "))
+```numero = int(input("Escribe un numero entre 1 y 3: "))
 if numero ==1:
   numeroTexto = "Uno"
 elif numero ==2:

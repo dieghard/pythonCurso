@@ -25,7 +25,7 @@
 
 # ¿Es difícil aprender a programar?: 🤔
 
-> Aprender a programar puede ser difícil al principio, pero con paciencia y práctica cualquiera puede hacerlo. Lo importante es empezar con cosas sencillas y poco a poco ir aprendiendo cosas más complicadas.
+> Aprender a programar puede ser difícil al principio, pero con paciencia y práctica cualquiera puede hacerlo. Lo importante es empezar con cosas sencillas y poco a poco ir aprendiendo cosas más complicadas.$$
 
 ---
 
