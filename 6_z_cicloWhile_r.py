@@ -7,11 +7,6 @@ while contador > 0:
 print("¡Despegue! 🚀👨🏻‍🚀🫂")
 
 
-
-
-
-
-
 #Adivina el Número:
 
 #Podemos usar:
