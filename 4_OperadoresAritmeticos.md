@@ -1,128 +1,128 @@
-# Lista de operadores Aritmeticos
+#  💥 Lista de operadores Aritmeticos 💥
 
-- Suma = +
-- Resta = -
-- Multiplicacion = \_
-- Division = /
-- Modulo = % (Resto de la division)
-- Exponenciacion = \*\*
-- Division Entera = // (Solo la parte entera de la division)
+- ## Suma = +
+- ## Resta = -
+- ## Multiplicacion = \_
+- ## Division = /
+- ## Modulo = % (Resto de la division)
+- ## Exponenciacion = \*\*
+- ## Division Entera = // (Solo la parte entera de la division)
 
-```
+### Suma
+```python
 operador_1 = 10
 operador_2 = 3
 suma = operador_1 + operador_2
 print ("el resultado de la suma es: ", suma)
-print(f"el resultado de la suma es: {suma}") #Otra manera de
+print(f"el resultado de la suma es: {suma}") 
 ```
-
-### concatenar con la F y el resultado entre llaves. - esto se llama Interpolacion de cadenas
-
-```
+--- 
+### Resta
+```python
 operador_1 = 10
 operador_2 = 3
 resta = operador_1 - operador_2
 print (f"el resultado de la resta es: {resta}")
 ```
-
+--- 
 ### Multiplicacion
 
-```
+```python
 operador_1 = 10
 operador_2 = 3
 multiplica = operador_1 _ operador_2
 print (f"el resultado de la resta es: {multiplica}")
 ```
+--- 
+### Division
 
-###? Division
-
-```
+```python
 operador_1 = 10
 operador_2 = 3
 divide = operador_1 / operador_2
 print (f"el resultado de la division es: {divide}")
 ```
-
+--- 
 ### Division sin punto flotante (solo parte entera)
 
-```
+```python
 operador_1 = 10
 operador_2 = 3
 divide = operador_1 // operador_2
 print (f"el resultado de la division es: {divide}")
 ```
-
+--- 
 ### Modulo = % (Resto o residuo de la division)
 
-```
+```python
 operador_1 = 10
 operador_2 = 2
 restodivision = operador_1 % operador_2
 print (f"el resultado del resto de la division es : {restodivision}")
 ```
-
+--- 
 ### Exponenciacion = \*\*
 
-```
+```python
 operador_1 = 10
 operador_2 = 2
 exponenciacion = operador_1 ** operador_2
 print (f"el resultado de la exponenciacion es : {exponenciacion}")
 ```
+--- 
 
-### """ Nueva forma de comentar muchos renglones (tripe comillas)
+# Interpolacion de cadenas
+## Concatenar con la F y el resultado entre llaves. 
+```python
+print(f"El resultado de la exponenciación es: {exponenciacion}")
+```
 
-# Ejercicios Propuestos
+## Triple Comillas (""")
+### Nueva forma de comentar en Python varios renglones
+---
 
-> 1-Se solicita realizar un programa para mostrar el resultado de la division de dos números enteros
+# OPERADORES
+# Asignacion 
 
-> 2-Se solicita realizar un programa para calcular el residuo de la division de dos números enteros
-
-> 3-Se solicita realizar un programa para calcular el area y el perimetro de un rectangulo, para ello
-
-- debera crear las siguiente variables:
-- Alto (int)
-- Ancho (int)
-  > El usuario debera proporcionar los valores de largo y ancho y despues imprimiro el resultado del area y el perimetro:
-  > _Recuerde la formula Area = largo _ ancho // Perimetro = (largo + ancho) \* 2
-  > se cierra con triple comilla"""
-
-### OPERADORES DE ASIGNACION
-
-(-) = Asignacion (el igual es el operador de asignacion)
-? += Incremento
+### (-) = Asignacion (el igual es el operador de asignacion)
+### ? += Incremento
 ejemplo
-
 - miVariable = 10
 - miVariable = miVariable + 1 #Incremento
   ó miVariable += 1 #Incremento
-
 ! -= Decremento
 
-```
+```python 
 miVariable = miVariable - 1 #Decremento
 miVariable -= 1 #Decremento
 ```
 
-\_= Multiplicacion
+### \_= Multiplicacion
 
-```
+```python
 miVariable = miVariable _ 2 #Multiplicacion
 miVariable _= _ 2 #Multiplicacion
 ```
 
-- /= Division
+### /= Division
+```python
   miVariable = miVariable / 2 #division
   miVariable /= 2 #division
+  ```
 - %= Modulo
 - \*\*= Exponenciacion
 - //= Division Entera
 
-## OPERADORES DE COMPARACION
-
+## COMPARACION
 ### Nos permite saber si los valores son igual o distintos
+  - ==
+  - !=
+  - *>*
+  - <
+  - *>=*
+  - <=
 
-# Las sentencias de control son estructuras en programación que permiten modificar el flujo de ejecución de un programa. Estas sentencias permiten tomar decisiones, ejecutar bloques de código de manera condicional o repetir ciertas operaciones mientras se cumpla una condición.
+#### Las sentencias de control son estructuras en programación que permiten modificar el flujo de ejecución de un programa. Estas sentencias permiten tomar decisiones, ejecutar bloques de código de manera condicional o repetir ciertas operaciones mientras se cumpla una condición.
 
 ```
 a = 4
@@ -144,10 +144,10 @@ print (f"el resultado es: {resultado}")
 resultado = (a <= b) #Menor o igual que
 print (f"el resultado es: {resultado}")
 ```
+---
+## Sentencia If y Else
 
-# utlizando if
-
-```
+```python
 a = 1
 b = 2
 if a > b:
@@ -155,26 +155,15 @@ if a > b:
 else:
   print ("a no es mayor que b")
 ```
-
-# Ejercicios Propuestos
-
-> 1-Se solicita realizar un programa para mostrar su el numero ingresado es par o impar (Usando operadores logicos)
-> #recuerde utilizar el % para saber si es par o impar
-
-> 2-Se solicita realizar un programa para mostrar el resultado de la division de dos números enteros
-
-> 3-Se solicita realizar un programa para mostrar si el numero es positivo o negativo
-
-> 4-Se solicita realizar un programa que pida la edad de una persona y determine si es mayor o menor de edad (18)
-
-## OPERADORES LOGICOS
+---
+## Logicos
 
 - AND (y) devuelve true si ambos valores son verdaderos
 - OR (o) devuelve true si al menos uno de los valores es verdadero
 - NOT (no) devuelve true si el valor es falso
 - XOR (o exclusivo) devuelve true si solo uno de los valores es verdadero
 
-```
+```python
 #Ejemplo de AND
 a = True
 b = True
@@ -194,13 +183,33 @@ a = True
 b = False
 resultado = (a ^ b)
 print (f"el resultado es: {resultado}")
-#Ejemplo de NOT
-a = True
-resultado = (not a)
-print (f"el resultado es: {resultado}")
 ```
 
-# Ejercicio Propuesto
+# Actividades 💬
+# Ejercicios - 1
+- 1-Se solicita realizar un programa para mostrar el resultado de la division de dos números enteros
+
+- 2-Se solicita realizar un programa para calcular el residuo de la division de dos números enteros
+
+- 3-Se solicita realizar un programa para calcular el area y el perimetro de un rectangulo, para ello
+  - debera crear las siguiente variables:
+  - Alto (int)
+  - Ancho (int)
+  > El usuario debera proporcionar los valores de largo y ancho y despues imprimiro el resultado del area y el perimetro:
+  > Recuerde la formula Area = largo _ ancho // Perimetro = (largo + ancho) \* 2
+
+# Ejercicios - 2
+
+> 1-Se solicita realizar un programa para mostrar su el numero ingresado es par o impar (Usando operadores logicos)
+> #recuerde utilizar el % para saber si es par o impar
+
+> 2-Se solicita realizar un programa para mostrar el resultado de la division de dos números enteros
+
+> 3-Se solicita realizar un programa para mostrar si el numero es positivo o negativo
+
+> 4-Se solicita realizar un programa que pida la edad de una persona y determine si es mayor o menor de edad (18)
+
+# Ejercicios - 3
 
 - Dado un numero determine si es se encuentra entre 0 y 10
 
@@ -216,7 +225,7 @@ else:
   print(f"El valor: {valor} no se encuentra entre 0 y 10")
 ```
 
-# Ejemplo de OR
+# Ejercicios - 4
 
 > Crear un programa que permita saber si un padre puede ir a ver como juega su hijo dependiendo si es un dia de descanso o si esta de vacaciones (usar operadores logicos)- de lo contrario no puede ir.
 
@@ -229,9 +238,10 @@ else:
 
 > TIENDA DE LIBROS: Crear un programa que permita ingresar un libro y su autor, muestre el precio (float) y deje escribir si el envio es gratis(true o false)
 
-# para imprimir toda la info utilizar el print
 
-```
+# Para imprimir toda la info utilizar el print
+
+```python
 print (f'''
 Hola mundo, aca se puede imprimir
 respetando los enter y los tabluladores.
@@ -250,5 +260,6 @@ if envioGratis != "SI" and envioGratis != "NO":
   envio es gratis: {envioGratis}
 ''')
 ```
+---
 
 [VOLVER](readme.md)

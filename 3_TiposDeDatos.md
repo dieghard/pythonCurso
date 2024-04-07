@@ -1,7 +1,7 @@
-# TIPOS DE DATOS EN PYTHON
+# 🛑 TIPOS DE DATOS EN PYTHON 🛑
 
 > En Python, los tipos de datos son esenciales para organizar y manipular información. Dominarlos es crucial para escribir código eficiente y preciso. En esta guía, exploraremos los tipos de datos básicos y avanzados, sus características y ejemplos prácticos para ayudarte a dominar este tema fundamental.
-
+---
 ## Tipos de datos básicos:
 
 ### Numéricos:
@@ -21,21 +21,21 @@
 - Conjuntos (set): Colecciones no ordenadas y sin duplicados de cualquier tipo de dato. Ejemplo: conjunto_colores = {"azul", "verde", "rojo"}
 - Todos los tipos de datos son almacenados en python como objetos. Un objeto es una entidad que contiene datos y métodos. los datos de un objeto se almacenan en atributos, mientras que los metodos son las acciones que el objeto puede realizar
 
-```
+```python
   edad = 25 # Un valor entero para la edad
   print(type(edad)) # permite ver el tipo de variable
 ```
 
 ## Flotante
 
-```
+```python
 precio = 12.99 # Un valor flotante para el precio
 print(type(precio)) # permite ver el tipo de variable
 ```
 
 ## Cadena
 
-```
+```python
 nombre: str = "Ana Pérez"
 #nombre: str los : y el str es un "hint" para decir de que
 tipo de datos es la variable pero solo es una "PISTA" no es obligatorio, ya que las variables en python son dinamicas.
@@ -43,47 +43,51 @@ cadena = "volvemos a empezar, tene cuidado que " # Una cadena de texto
 print(type(cadena)) # permite ver el tipo de variable
 print (cadena \* 3) # multiplicar la cadena por 3
 ```
+---
+# Operando con Datos
 
-### mostramos una parte de la variable cadena
+## String
+### Mostramos una parte de la variable cadena
 
-```
+```python
 nombre: str = "Ana Pérez" # Un valor de cadena para el nombre
 print(nombre[0:3]) # muestra los primeros 3 caracteres
 ```
 
-### mostramos una parte de la variable cadena
+### Mostramos una parte de la variable cadena
 
-```
+```python
 nombre: str = "Ana Pérez" # Un valor de cadena para el nombre
 print(nombre[-5:10]) # muestra el apellido
 ```
 
-### mostramos una parte de la variable cadena
+### Mostramos una parte de la variable cadena
 
-```
+```python
 nombre: str = "Ana Pérez" # Un valor de cadena para el nombre
 print(nombre[0:4]) # muestra el nombre
 ```
-
+## Booleanos
 ### Booleano como interruptor para controlar el flujo
 
-```
+```python
 esta_activo = True # Un valor booleano para indicar si está activo
 print(type(esta_activo))
 ```
-
+## Listas
 ### Lista como caja de herramientas para almacenar herramientas
 
-```
+```python
 nombres = ["Ana", "Pedro", "María"] # Una lista de nombres
 print(type(nombres))
 ```
 
 ### Diccionario como manual de instrucciones para buscar información
 
-```
+```python
 diccionario_edades = {"Ana": 25, "Pedro": 30} # Un diccionario con edades
 ```
+---
 
 # Ejemplos de errores:
 
@@ -91,22 +95,23 @@ diccionario_edades = {"Ana": 25, "Pedro": 30} # Un diccionario con edades
 
 - Error: usar un entero para almacenar un precio con decimales
 
-precio_entero = 12.99 # Esto puede generar resultados inexactos
+> precio_entero = 12.99 # Esto puede generar resultados inexactos
 
 ### Error: usar una cadena para realizar cálculos matemáticos
 
-```
+```python
 suma_cadenas = "1" + "2" # Esto genera un error de tipo
 
 # Error: usar un booleano para almacenar una lista de nombres
 
-lista_booleana = True, False, True # Esto genera un error de tipo
-lista_booleana =true # false pq va en Mayuscula
+lista_booleana = True, False, True 
+Esto genera un error de tipo
+lista_booleana = true # false porque va en Mayuscula
 ```
+---
+## Manejo de cadenas
 
-### Manejo de cadenas
-
-```
+```python
 miGrupoFavorito: str = "Guns & Roses"
 print(miGrupoFavorito)
 print(type(miGrupoFavorito))
@@ -123,9 +128,9 @@ print ("Mi grupo favorito es: ", miGrupoFavorito )
 print(f"Mi grupo favorito es: {miGrupoFavorito} {comentario}")
 ```
 
-### Manejo de cadenas - sumas (contatenacion vs suma - Sobre carga de operadores)
+## Manejo de cadenas - sumas (contatenacion vs suma - Sobre carga de operadores)
 
-```
+```python
 numero1 = "1"
 numero2 = "2"
 print (numero1+numero2)
@@ -135,10 +140,11 @@ numero2 = 2
 print (numero1 + numero2)
 
 ```
+---
 
-### Conversion de tipos de datos
+## Conversion de tipos de datos
 
-```
+```python
 numero1 = "1"
 numero2 = "2"
 print (int(numero1)+int(numero2))
@@ -146,7 +152,7 @@ print (int(numero1)+int(numero2))
 
 ### Tipos de datos Bool (boolean)
 
-```
+```python
 miVariableTrue = True
 miVariableFalse = False
 print (miVariableTrue)
@@ -154,11 +160,11 @@ print (miVariableTrue)
 miVariable = 3 > 3
 print (miVariable)
 ```
-
-> En Python, if y else son dos palabras clave que se usan para crear sentencias condicionales. Estas permiten ejecutar diferentes bloques de código dependiendo de si una condición se cumple o no.
+---
+> En Python, if y else son dos palabras clave (que veremos más adelante) que se usan para crear sentencias condicionales. Estas permiten ejecutar diferentes bloques de código dependiendo de si una condición se cumple o no.
 > Por ejemplo, Imaginen que queremos saber si un número es mayor que 10.
 
-```
+```python
 numero = 15
 if numero > 10:
   print("El número es mayor que 10")
@@ -167,27 +173,34 @@ else:
 #! nota: importante el tabulado en el if y else
 ```
 
-### PROCESAR ENTRADA DE DATOS DEL USUARIO (FUNCION INPUT)
+## Procesar entrada de datos del usuario 
+### FUNCION INPUT
 
-```
+```python
 # Funcion input para procesar la entrada de datos del usuario
 resultado = input("Escribe un número:")
 print (resultado)
 ```
 
-### convertir los datos (ya que la funcion INPUT entrega un string)
+### Convertir los datos 
+#### Ya que la funcion INPUT entrega un string
 
-```
+```python
 numero1 = input("Escribe un número:")
 numero2 = input("Escribe otro número:")
 print (int(numero1) + int(numero2))
+```
 
-# OTRA MANERA
+### Otra Manera de Hacerlo
+```python
 numero1:int = int(input("Escribe un número:"))
 numero2:int = int(input("Escribe otro número:"))
 print (numero1 + numero2)
 ```
+---
 
+
+# Actividades 💬
 ### Ejercicio 1:
 
 > Objetivo: Pedir al usuario dos números, convertirlos a enteros y mostrar la suma.
@@ -207,5 +220,6 @@ print (numero1 + numero2)
 - Ingrese el Numero de Paginas :
 - Ingrese el Año de publicación :
 - Imprimir : " El Libro <nombre del libro> fue escrito por <autor> y tiene <numero de paginas> paginas, y fue publicado en el año <año de publicacion>"
+---
 
 [VOLVER](readme.md)

@@ -1,4 +1,4 @@
-# ¿Qué es la programación? 💻
+# 💻 ¿Qué es la programación? 💻
 
 ---
 
@@ -6,7 +6,7 @@
 
 ---
 
-# ¿Qué se puede hacer con la programación? 😮
+# 😮 ¿Qué se puede hacer con la programación? 😮
 
 - Crear software: Desde aplicaciones móviles hasta sistemas operativos, la programación es la base de todo software.
 - Desarrollar sitios web: La programación permite crear sitios web interactivos y dinámicos.
@@ -17,19 +17,19 @@
 
 ---
 
-# ¿Qué se necesita para programar?: 😗
+# 😗 ¿Qué se necesita para programar?: 😗
 
 > Para programar solo se necesita una computadora y un programa para escribir código. Hay muchos programas gratuitos disponibles, como Python, Java o JavaScript.
 
 ---
 
-# ¿Es difícil aprender a programar?: 🤔
+# 🤔 ¿Es difícil aprender a programar?: 🤔
 
 > Aprender a programar puede ser difícil al principio, pero con paciencia y práctica cualquiera puede hacerlo. Lo importante es empezar con cosas sencillas y poco a poco ir aprendiendo cosas más complicadas.$$
 
 ---
 
-# ¿Por qué es importante aprender a programar?: 🤯
+# 🤯 ¿Por qué es importante aprender a programar?: 🤯
 
 Aprender a programar es importante porque nos permite:
 
@@ -40,14 +40,14 @@ Aprender a programar es importante porque nos permite:
 
 ---
 
-# QUE ES UN PROGRAMADOR?🥹
+# 👩‍💻 ¿QUE ES UN PROGRAMADOR? 👨‍💻
 
 > Un programador es un profesional que se dedica a crear y optimizar software informático.
 > Para ello, utilizan lenguajes de programación que son similares a idiomas que permiten comunicarse con la computadora y escribir instrucciones que generan nuevos programas
 
 ---
 
-# Tipos de programadores: 🚀
+# 🚀 Tipos de programadores: 🚀
 
 - Por especialidad:
 
@@ -85,7 +85,7 @@ Aprender a programar es importante porque nos permite:
 
 ---
 
-# QUE ES UN ALGORITMO? 🧮
+# 🧮 ¿QUE ES UN ALGORITMO? 🧮
 
 > Un algoritmo es un conjunto de pasos lógicos y bien definidos que se siguen para realizar una tarea o resolver un problema. Es como una receta que describe cómo se debe preparar un plato.
 
@@ -118,13 +118,13 @@ permiten:
 
 ---
 
-# ¿Qué es la lógica? 🤔
+# 🤔 ¿Qué es la lógica? 🤔
 
 > La lógica es la capacidad de pensar de forma clara y ordenada para llegar a conclusiones válidas. Se trata de usar la razón para analizar información, identificar patrones y resolver problemas.
 
 ---
 
-# ¿Por qué se aplica la lógica en la programación? 🤔
+# 🤔 ¿Por qué se aplica la lógica en la programación? 🤔
 
 > La lógica es fundamental en la programación porque permite a los programadores:
 
@@ -134,7 +134,7 @@ permiten:
 
 ---
 
-# ¿Cómo se aplica la lógica en la programación? 🧠
+# 🧠 ¿Cómo se aplica la lógica en la programación? 🧠
 
 La lógica se aplica en la programación a través de: - Estructuras de control: Las estructuras de control, como las condicionales y los bucles, permiten a los programadores controlar el flujo de ejecución de un programa.
 
@@ -143,7 +143,7 @@ La lógica se aplica en la programación a través de: - Estructuras de control:
 
 ---
 
-# Ejemplos de lógica en la programación: 🧠
+# 🧠 Ejemplos de lógica en la programación: 🧠
 
 - Un programa que calcula el promedio de dos números: El programa utiliza una estructura condicional para determinar si los dos números son iguales o no.
 - Un programa que busca un elemento en una lista: El programa utiliza un bucle para recorrer la lista y comparar cada elemento con el elemento que se busca.
