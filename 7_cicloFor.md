@@ -1,5 +1,5 @@
 # El Ciclo For 🛂
-## Una herramienta poderosa para la repetición.
+## 🔻 Una herramienta poderosa para la repetición. 🔻
 ### El ciclo for es una estructura de control fundamental en la programación que permite ejecutar un bloque de código de forma repetitiva, conociendo de antemano la cantidad de veces que se desea ejecutar. Es una herramienta poderosa que facilita la escritura de código eficiente y legible, especialmente cuando se trata de tareas repetitivas.
 
 # Un ciclo for se compone de tres partes principales:
@@ -21,12 +21,12 @@ for i in range(10, -1, -1):
 ```
 #### En este ejemplo, el ciclo for se ejecuta 5 veces. La variable de control i se inicializa en 0 y se incrementa en 1 en cada iteración. El bloque de código dentro del ciclo se ejecuta 5 veces, imprimiendo los valores de i desde 0 hasta 4.
 
-# Ventajas del ciclo for:
+# 🛑 Ventajas del ciclo for: 🛑
 
 - ## Facilidad de uso: La sintaxis del ciclo for es simple y fácil de entender, lo que lo hace ideal para principiantes.
 - ## Eficiencia: El ciclo for permite ejecutar código de forma repetitiva sin necesidad de escribir código redundante.
 - ## Legibilidad: El uso de un ciclo for hace que el código sea más legible y fácil de entender.
-# Aplicaciones del ciclo for:
+# 💥 Aplicaciones del ciclo for: 💥
 ### El ciclo for se puede utilizar para una gran variedad de tareas, como:
 - ## Recorrer una lista o un array.
 - ## Imprimir una serie de números.
@@ -47,8 +47,8 @@ else:
     print('FIN DEL PROGRAMA')
 ```
 
-# Palabra BREACK dentro de los ciclos
-## No llega al else se rompe el ciclo for y no imprime FIN DE PROGRAMA
+# Palabra BREAK 
+## Dentro de los ciclos la palabra break rompe el ciclo for haciendo que no llegue al else, en este caso no imprime FIN DE PROGRAMA
 ```python
 for letra in 'HOLANDA':
   if letra =='A':
@@ -58,7 +58,7 @@ else:
   print('FIN DEL PROGRAMA')
 
 ```
-# PALABRA CONTINUE
+# Palabra CONTINUE
 ### La palabra reservada continue se utiliza para omitir el resto del código dentro de un ciclo for en la iteración actual y pasar a la siguiente iteración. Es decir, cuando se encuentra la palabra continue, el ciclo for salta al siguiente valor de la variable de control y continúa con la siguiente iteración.
 
 ```python
