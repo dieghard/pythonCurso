@@ -12,10 +12,15 @@ class Vehiculo:
 
   def frenar(self):
     print(f"El vehículo {self.marca} {self.modelo} está frenando.")
+
 miAuto = Vehiculo("Toyota", "Corolla", "Azul")
-miMoto = Vehiculo("Honda", "CBX", "Negra")
+miMoto = Vehiculo("HARLEY DAVIDSON", "1200", "Negra")
 
 # Accionando los métodos de los objetos:
 miAuto.arrancar()
 miMoto.acelerar()
 miAuto.frenar()
+
+miMoto.arrancar()
+miMoto.acelerar()
+miMoto.frenar()
