@@ -1,0 +1,60 @@
+Curso de Programación Python de Cero a Héroe (20 clases)
+Horario: Martes y jueves de 20 a 21.15 hs.
+
+Fechas: Del 30 de abril al 4 de julio (excepto 1° de mayo y 25 de mayo)
+
+Descripción:
+
+Este curso te enseñará todo lo que necesitas saber para programar en Python desde cero. Aprenderás desde cómo instalar Python y escribir tu primer programa hasta conceptos más avanzados como la programación orientada a objetos.
+
+Objetivos:
+
+Al finalizar el curso, serás capaz de:
+Instalar y configurar Python en tu computadora.
+Escribir programas en Python para realizar tareas básicas.
+Utilizar variables, tipos de datos y operadores.
+Controlar el flujo de tu programa con sentencias de control y ciclos.
+Trabajar con estructuras de datos como listas, tuplas y diccionarios.
+Crear funciones para reutilizar código.
+Diseñar y programar clases en Python.
+Contenidos:
+
+Módulo 1: Bienvenidos (1 clase)
+
+Presentación del curso y del instructor.
+Introducción a la programación y Python.
+Instalación y configuración de Python.
+Módulo 2: Instalaciones (1 clase)
+
+Instalación de herramientas y librerías para Python.
+Entornos de desarrollo y configuración.
+Módulo 3: Fundamentos de Python (4 clases)
+
+1-HelloWorld: Tu primer programa en Python.
+2-Variables: Almacenamiento de datos en la memoria.
+3-Tipos de Datos: Números, cadenas, booleanos y más.
+4-Operadores Aritméticos: Realizando operaciones con datos.
+Módulo 4: Control de Flujo (3 clases)
+
+5-Sentencias De Control: if, elif, else.
+6-Ciclo While: Repitiendo código hasta que una condición se cumpla.
+7-Ciclo For: Repitiendo código un número determinado de veces.
+Módulo 5: Estructuras de Datos (3 clases)
+
+8-Listas: Almacenando colecciones de datos ordenadas.
+9-Tuplas: Colecciones de datos inmutables.
+10-Conjuntos y Diccionarios: Estructuras de datos avanzadas.
+Módulo 6: Funciones (2 clases)
+
+11-Funciones: Creando bloques de código reutilizables.
+12-Argumentos y Valores de Retorno: Pasando datos a las funciones.
+Módulo 7: Programación Orientada a Objetos (POO) (4 clases)
+
+13-POO: Conceptos básicos y paradigma de programación.
+14-Clases y Objetos: Creando tus propios tipos de datos.
+15-Métodos y Atributos: Funciones y características de las clases.
+16-Herencia y Polimorfismo: Reutilización de código y relaciones entre clases.
+Módulo 8: Repaso (opcional) (1 clase)
+
+Repaso de los conceptos clave del curso.
+Resolución de dudas y preguntas de los estudiantes.

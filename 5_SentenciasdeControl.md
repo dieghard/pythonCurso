@@ -1,4 +1,5 @@
 # Sentencias De Control 🤯
+
 ### Repasando : Las sentencias de control son estructuras en programación que permiten modificar el flujo de ejecución de un programa. Estas sentencias permiten tomar decisiones, ejecutar bloques de código de manera condicional o repetir ciertas operaciones mientras se cumpla una condición. En Python, las principales sentencias de control son if, else, elif y while:
 
 - ## if:
@@ -40,7 +41,8 @@ elif 80 <= nota < 90:
 else:
   print("Necesitas mejorar")
 ```
-  > crear un programa que pase de numeros a texto : 1 = Uno, 2 = Dos, 3 = Tres
+
+> crear un programa que pase de numeros a texto : 1 = Uno, 2 = Dos, 3 = Tres
 
 ```python
 numero = int(input("Escribe un numero entre 1 y 3: "))
@@ -76,6 +78,7 @@ else :
 ## Simplificacion de Else IF en una sola sentencia
 
 ### Se puede simplificar la estructura de un if else if else en una sola sentencia utilizando el operador ternario
+
 ### Ejemplo:
 
 ```python
@@ -89,7 +92,9 @@ print('condicion verdadera') if condicion else print('condicion falsa') #operaci
 ```
 
 ## ⚠Solo si el codigo es chico se recomienda el operador ternario.
+
 Otro ejemplo :
+
 ```python
 numero = int(input("Ingresa un número: "))
 resultado = "Par" if numero % 2 == 0 else "Impar"
@@ -105,6 +110,7 @@ print(f"Tú eres {grupo}.")
 # Actividades 💬
 
 ## CREAR UN PROGRAMA QUE PERMITE Calificación de estudiantes, el programa debera pedir la materia y la nota y mostrar la calificación correspondiente >= 9 excelente , >= 7 Aprobado , >= 5 regular, < 5 insuficiente -
+
 ## Realice un programa funciona como una calculadora básica que permite al usuario realizar operaciones simples.
 
 - el programa debera pedir el numero 1 , el operador y el numero 2 y realizar la operacion correspondiente
@@ -130,6 +136,7 @@ if 1 <= mes <= 12:
  else:
    print("Número de mes no válido. Ingresa un número del 1 al 12.")
 ```
+
 ---
 
 [VOLVER](readme.md)

@@ -1,21 +1,16 @@
-class Vehiculo:
-  def __init__(self, marca, modelo, color):
-    self.marca = marca  # Atributo público
-    self.modelo = modelo  # Atributo público
-    self.color = color  # Atributo público
+import random
 
-  def arrancar(self):
-    print(f"El vehículo {self.marca} {self.modelo} está arrancando.")
+def generar_lista_aleatoria(cantidad, minimo, maximo):
+  """Función que genera una lista de números aleatorios entre un rango especificado."""
+  lista_aleatoria = []
+  for _ in range(cantidad):
+    numero_aleatorio = random.randint(minimo, maximo)
+    lista_aleatoria.append(numero_aleatorio)
+  return lista_aleatoria
 
-  def acelerar(self):
-    print(f"El vehículo {self.marca} {self.modelo} está acelerando.")
+cantidad = int(input("Ingrese la cantidad de números aleatorios a generar: "))
+minimo = int(input("Ingrese el valor mínimo del rango: "))
+maximo = int(input("Ingrese el valor máximo del rango: "))
 
-  def frenar(self):
-    print(f"El vehículo {self.marca} {self.modelo} está frenando.")
-miAuto = Vehiculo("Toyota", "Corolla", "Azul")
-miMoto = Vehiculo("Honda", "CBX", "Negra")
-
-# Accionando los métodos de los objetos:
-miAuto.arrancar()
-miMoto.acelerar()
-miAuto.frenar()
+lista_generada = generar_lista_aleatoria(cantidad, minimo, maximo)
+print(f"Lista de números aleatorios: {lista_generada}")
