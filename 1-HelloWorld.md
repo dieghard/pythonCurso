@@ -11,7 +11,7 @@
 - Scripting y automatización
 - Python se utiliza para scripting (secuencias de comandos) y automatización en muchas industrias, desde máquinas de programación en grandes fábricas hasta usos de ocio, como videojuegos. Las maneras en que el scripting y la automatización benefician a las industrias son innumerables, al igual que la variedad de industrias en las que se utiliza.
 
-- ## 💻 Desarrollo de software 💻
+## 💻 Desarrollo de software 💻
   > Python se implementa en el desarrollo de software desde que se lanzó y continúa siendo muy popular para ese propósito.
   > Se utiliza para crear software en diferentes plataformas porque es compatible con muchos ámbitos de operación
   > Sistemas operativos para computadoras y dispositivos móviles y en entornos de sistema en tiempo de ejecución.
@@ -23,7 +23,7 @@
   - Esta industria se ha convertido, recientemente, en un usuario importante del lenguaje Python, que ha manejado desde siempre ciencias de blockchain.,
   - (¿qué es blockchain?):Blockchain, o cadena de bloques,es una base de datos compartida o distribuida que almacena datos de cualquier tipo. La información registrada está almacenada en bloques, ligados entre sí criptográficamente y validada de una forma descentralizada a través de un protocolo común
 - El surgimiento y crecimiento continuo alrededor de tecnologías —como las criptomonedas y NFT— lo han encumbrado dentro de la industria. Su habilidad para manejar todos los aspectos de la tecnología blockchain lo convierte en un elemento primordial.
-- # ¿Que veremos en el curso ?
+# ¿Que veremos en el curso ?
 - AHORA:
   - Instalacion de pyton
   - Instalacion de Visual studio Code
