@@ -17,7 +17,7 @@ Objetivos:
 - Escribir programas en Python para realizar tareas básicas.
 - Utilizar variables, tipos de datos y operadores.
 - Controlar el flujo de tu programa con sentencias de control y ciclos.
-- Trabajar con estructuras de datos como listas, tuplas y diccionarios.
+- Trabajar con estructuras de datos como listas, Colecciones, tuplas y diccionarios.
 - Crear funciones para reutilizar código.
 - Diseñar y programar clases en Python.
 ```

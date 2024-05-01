@@ -1,7 +1,9 @@
 # 🛑 TIPOS DE DATOS EN PYTHON 🛑
 
 > En Python, los tipos de datos son esenciales para organizar y manipular información. Dominarlos es crucial para escribir código eficiente y preciso. En esta guía, exploraremos los tipos de datos básicos y avanzados, sus características y ejemplos prácticos para ayudarte a dominar este tema fundamental.
+
 ---
+
 ## Tipos de datos básicos:
 
 ### Numéricos:
@@ -43,10 +45,13 @@ cadena = "volvemos a empezar, tene cuidado que " # Una cadena de texto
 print(type(cadena)) # permite ver el tipo de variable
 print (cadena \* 3) # multiplicar la cadena por 3
 ```
+
 ---
+
 # Operando con Datos
 
 ## String
+
 ### Mostramos una parte de la variable cadena
 
 ```python
@@ -67,14 +72,18 @@ print(nombre[-5:10]) # muestra el apellido
 nombre: str = "Ana Pérez" # Un valor de cadena para el nombre
 print(nombre[0:4]) # muestra el nombre
 ```
+
 ## Booleanos
+
 ### Booleano como interruptor para controlar el flujo
 
 ```python
 esta_activo = True # Un valor booleano para indicar si está activo
 print(type(esta_activo))
 ```
+
 ## Listas
+
 ### Lista como caja de herramientas para almacenar herramientas
 
 ```python
@@ -87,6 +96,7 @@ print(type(nombres))
 ```python
 diccionario_edades = {"Ana": 25, "Pedro": 30} # Un diccionario con edades
 ```
+
 ---
 
 # Ejemplos de errores:
@@ -104,11 +114,13 @@ suma_cadenas = "1" + "2" # Esto genera un error de tipo
 
 # Error: usar un booleano para almacenar una lista de nombres
 
-lista_booleana = True, False, True 
+lista_booleana = True, False, True
 Esto genera un error de tipo
 lista_booleana = true # false porque va en Mayuscula
 ```
+
 ---
+
 ## Manejo de cadenas
 
 ```python
@@ -140,6 +152,7 @@ numero2 = 2
 print (numero1 + numero2)
 
 ```
+
 ---
 
 ## Conversion de tipos de datos
@@ -160,7 +173,9 @@ print (miVariableTrue)
 miVariable = 3 > 3
 print (miVariable)
 ```
+
 ---
+
 > En Python, if y else son dos palabras clave (que veremos más adelante) que se usan para crear sentencias condicionales. Estas permiten ejecutar diferentes bloques de código dependiendo de si una condición se cumple o no.
 > Por ejemplo, Imaginen que queremos saber si un número es mayor que 10.
 
@@ -173,7 +188,8 @@ else:
 #! nota: importante el tabulado en el if y else
 ```
 
-## Procesar entrada de datos del usuario 
+## Procesar entrada de datos del usuario
+
 ### FUNCION INPUT
 
 ```python
@@ -182,7 +198,8 @@ resultado = input("Escribe un número:")
 print (resultado)
 ```
 
-### Convertir los datos 
+### Convertir los datos
+
 #### Ya que la funcion INPUT entrega un string
 
 ```python
@@ -192,15 +209,17 @@ print (int(numero1) + int(numero2))
 ```
 
 ### Otra Manera de Hacerlo
+
 ```python
 numero1:int = int(input("Escribe un número:"))
 numero2:int = int(input("Escribe otro número:"))
 print (numero1 + numero2)
 ```
+
 ---
 
-
 # Actividades 💬
+
 ### Ejercicio 1:
 
 > Objetivo: Pedir al usuario dos números, convertirlos a enteros y mostrar la suma.
@@ -220,6 +239,7 @@ print (numero1 + numero2)
 - Ingrese el Numero de Paginas :
 - Ingrese el Año de publicación :
 - Imprimir : " El Libro <nombre del libro> fue escrito por <autor> y tiene <numero de paginas> paginas, y fue publicado en el año <año de publicacion>"
+
 ---
 
 [VOLVER](readme.md)
