@@ -29,4 +29,4 @@ tupla_3 = ("Hola", "Mundo", "!")
 ```
 ---
 
-[VOLVER](readme.md)
+[VOLVER](/pythonCurso/readme.md)

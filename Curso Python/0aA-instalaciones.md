@@ -32,4 +32,4 @@ Puedes instalar estas extensiones en VS Code siguiendo estos pasos:
 
 Configuración visual del tema.
 
-[VOLVER](readme.md)
+[VOLVER](/pythonCurso/readme.md)

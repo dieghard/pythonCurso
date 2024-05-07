@@ -179,4 +179,4 @@ cree una funcion que permita ingresar 3 números y nos muestre cual es el mayor
 Generar un programa que permita el ingreso de la cantidad de numeros aleatorios a generar y los muestre.
 
 el numero minimo y el numero maximo
-[VOLVER](readme.md)
+[VOLVER](/pythonCurso/readme.md)
