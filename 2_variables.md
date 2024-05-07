@@ -163,6 +163,60 @@ x = 10
 print(id(x))
 #==================================
 ```
+---
+## Buenas Practicas con Variables en Python
+>Cuando hablamos de buenas practicas, nos referimos a aquellas formas de hacer codigo que pueden ayudarnos a escribirlo de manera más limpia y legible ¡a continuacion voy a destacar algunas que pueden ayudarte con las variables!
+1. ### Nombres descriptivos: Usa nombres descriptivos para tus variables. Esto hace que tu código sea más fácil de entender. Por ejemplo, en lugar de x, podrías usar edad si estás almacenando la edad de alguien.
+```python   
+# Mal
+x = 25
+
+# Bien
+edad = 25
+```
+2. ### Evita nombres reservados: No uses nombres que ya están reservados por Python. Por ejemplo, no llames a una variable list o str, ya que estos son nombres de tipos de datos incorporados en Python.
+```python 
+# Mal
+list = [1, 2, 3]
+
+# Bien
+mi_lista = [1, 2, 3]
+```
+3. ### Convenciones de estilo: Sigue las convenciones de estilo de Python, como PEP 8. Por ejemplo, usa minúsculas para los nombres de las variables y separa las palabras con guiones bajos.
+```python 
+# Mal
+miVariable = 42
+
+# Bien
+mi_variable = 42
+```
+4. ### Evita nombres genéricos: Evita nombres de variables demasiado genéricos que puedan confundir o no transmitir su propósito. Por ejemplo, no uses nombres como dato, valor, resultado, etc., a menos que sea realmente necesario y su significado esté claro en el contexto.
+```python 
+# Mal
+dato = 10
+
+# Bien
+numero_de_intentos = 10
+```
+5. ### Usa constantes en mayúsculas: Si tienes variables que son constantes y no van a cambiar, usa nombres en mayúsculas para distinguirlas.
+```python 
+# Mal
+pi = 3.14159
+
+# Bien
+PI = 3.14159
+```
+6. ### Inicializa variables cuando sea posible: Siempre que sea posible, inicializa tus variables cuando las declares. Esto hace que tu código sea más explícito y menos propenso a errores.
+```python 
+# Mal
+nombre = ""
+edad = 0
+
+# Bien
+nombre = "Juan"
+edad = 30
+
+```
 
 ---
 
@@ -172,9 +226,10 @@ print(id(x))
 
 ## Escribir un programa que sume dos números.
 
-## Escribir un programa que calcule el promedio de dos notas.
+## Escribir 3 variables para que guarden Apellido y nombre - Email y telefono y mostrarlos en pantalla, con el siguiente mensaje "Hola, Mi nombre es: ..., te paso mi contacto telefonico: ... y mi email: ..."
 
-## Escribir 3 variables para que guarden Apellido y nombre - Email y telefono y mostrarlos en pantalla
+## Escribe un programa donde una variable llamada contador cambie a lo largo de la ejecucion del programa, que su primer valor sea 0, cambie a 5 y posteriormente a 25 para al finalizar el programa volver a ser 5.
+
 
 ---
 
