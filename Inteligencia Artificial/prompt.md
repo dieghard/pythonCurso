@@ -193,4 +193,15 @@ Posterior a enviar este prompt, chatGPT comenzará a hacernos preguntas para mej
 
 Completando estas preguntas nos puede dar pie a generar un discurso mucho más rico y poder usarlo como base para un discurso oficial que simplemente pidiendole "Generame un discurso para el 25 de mayo"
 ---
+# Mientras más especificos mejor!
+>Soy una mujer de 25 años que mide 1.60 metros y pesa 50kg. Voy al gimnasio 5 dias a la semana y cada día entreno una Hora. Quiero ganar masa muscular y subir 2kg. Eres un nutriologo con más de 20 años de experiencia en dietas veganas. Hazme un plan nutricional vegano con dieta para 7 dias de alimentacion poniendo lo más detallado posible cada plato. Por Ejemplo: Tostadas con hummus: Incluyen x calorias, se necesitan 300gr de hummus, 3 tostadas y el horario de la comida es 2:00pm. Presentame la informacion en una tabla donde las columnas sean: Número de día, Platillo, calorías e ingredientes. Usa un tono formal para presentarme la informacion.
+---
+### En el prompt anterior podemos detectar diferentes estructuras que nos ayudará a que chatGPT nos entienda mejor y nos de un resultado espectacular.
+  - Contexto: Mientras más informacion sobre lo que queremos le demos, mejor será el resultado, en este ejemplo el contexto esta primero: "Soy una mujer de 25 años que mide 1.60 metros y pesa 50kg. Voy al gimnasio 5 dias a la semana y cada día entreno una Hora. Quiero ganar masa muscular y subir 2kg."
+  - Persona: Podemos pedirle a ChatGPT que se comporte como otra persona, en este caso como un "nutriologo con más de 20 años de experiencia en dietas veganas" haciendo que la salida sea aún más especifica.
+  - Accion/ tarea: Debemos ordenarle por medio de un verbo lo que queremos que haga, en este caso "Hazme un plan nutricional vegano con dieta para 7 dias de alimentacion poniendo lo más detallado posible cada plato."
+  - Ejemplo: Sumado al contexto de lo que queremos, siempre es bueno agregar un ejemplo ya sea como nosotros redactamos o lo que esperamos en la salida para terminar de ayudar a chatGPT a entendernos, en este caso " Por Ejemplo: Tostadas con hummus: Incluyen x calorias, se necesitan 300gr de hummus, 3 tostadas y el horario de la comida es 2:00pm."
+  - Formato de Salida: Este es de los puntos más importantes, ya que es como nosotros verémos la salida, podemos pedirlo de muchas formas y en muchisimos formatos que se acomoden más a nuestros gustos o sean más o menos practicos para lo que estamos consultando, en este caso se le solicito "Presentame la informacion en una tabla donde las columnas sean: Número de día, Platillo, calorías e ingredientes."
+  - Tono: Este ultimo punto junto a Persona es uno de los menos importantes ya que pueden no utilizarse y el prompt final no varia mucho, pero viene especialmente bien para cambiar el tono del texto final, es muy util en discursos, tareas o para adecuarlo a contenido de redes sociales, en este caso: " Usa un tono formal para presentarme la informacion."
+---
 [VOLVER](/pythonCurso/readme.md)

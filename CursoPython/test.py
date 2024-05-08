@@ -1,18 +1,35 @@
-print("Hola Gente🧑")
+#No suma, concatena
+def calculadora(num1, num2, operacion):
+    if operacion == "+":
+      resultado = num1 + num2
+    elif operacion == "-":
+      resultado = num1 - num2
+    elif operacion == "*":
+      resultado = num1 * num2
+    elif operacion == "/":
+      resultado = num1 / num2
+    elif operacion == "%":
+      resultado == num1 % num2
+    return resultado
+num1 = input("Ingrese el primer numero:" )
+num2 = input("Ingrese el segundo numero:")
+operacion = input("Ingrese que tipo de operacion quieres realizar(+,-,*,/, %): ")
+print(calculadora(num1, num2, operacion))
 
-nombre_Apellido = "Gaspar Oddovero Herrera"
-telefono = 3385405049
-email = "gaspyoddovero742@gmail.com"
 
-print("Hola, mi nombre es: ", nombre_Apellido, 
-      "Mi contacto telefonico es: ", telefono,  
-      "Y mi email es: ", email)
-
-contador = 0
-print("Ahora contador vale:", contador)
-contador = 5
-print("Ahora contador vale:", contador)
-contador = 25
-print("Ahora contador vale:", contador)
-contador = 5
-print("Ahora contador vale:", contador)
+"""def calculadora_que_anda(num1, num2, operacion):
+    if operacion == "+":
+      resultado = num1 + num2
+    elif operacion == "-":
+      resultado = num1 - num2
+    elif operacion == "*":
+      resultado = num1 * num2
+    elif operacion == "/":
+      resultado = num1 / num2
+    elif operacion == "%":
+      resultado == num1 % num2
+    return resultado
+num1 = int(input("Ingrese el primer numero:" ))
+num2 = int(input("Ingrese el segundo numero:"))
+operacion = input("Ingrese que tipo de operacion quieres realizar(+,-,*,/, %): ")
+print(calculadora_que_anda(num1, num2, operacion))"""
