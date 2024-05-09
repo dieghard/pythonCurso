@@ -1,3 +1,12 @@
+> DATO DE COLOR :
+
+    ¿Por qué se llama "Python"?  Guido van Rossum, el creador,   quería un nombre corto,
+    único y un poco misterioso. En ese momento, él había estado leyendo los Guiones publicados de Flying Circus de Monty Python,
+    un popular programa de la BBC, era un programa de comedia de los años 1970. (Supuestamente obtuvimos el término "spam" de
+    una parodia en ese programa.) Le gustó tanto el programa que decidió nombrar su nuevo
+    lenguaje de programación en homenaje al mismo. Esto demuestra que los programadores tienen sentido del humor.
+    si bien este está deformado y es peculiar y, a veces, vive más allá del alcance de los simples mortales, pero existe.
+
 # 🛑 TIPOS DE DATOS EN PYTHON 🛑
 
 > En Python, los tipos de datos son esenciales para organizar y manipular información. Dominarlos es crucial para escribir código eficiente y preciso. En esta guía, exploraremos los tipos de datos básicos y avanzados, sus características y ejemplos prácticos para ayudarte a dominar este tema fundamental.
