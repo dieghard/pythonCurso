@@ -1,4 +1,16 @@
-# print(f"") en Python: Cadenas Formateadas con f 🤯
+# Programación con Python
+
+**Creado por:** [Diego Markiewicz](), [Gaspar Oddovero](https://www.linkedin.com/in/gaspar-o-122803175/)
+
+**Licencia: [LICENSE.md](LICENSE.md)**
+
+**Descripción del archivo:** Curso de programación Modulo I con Python
+
+**Palabras clave:** Python, programación, principiantes, ejercicios
+
+---
+
+## print(f"") en Python: Cadenas Formateadas con f 🤯
 
 En Python, `print()` es una función que se usa para mostrar información en la consola. El código `print(f"{variable}")` utiliza cadenas formateadas con f (f-strings en inglés), una característica poderosa introducida en Python 3.6, para crear cadenas con formato que integran variables sin problemas.
 

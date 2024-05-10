@@ -1,6 +1,12 @@
-# CURSO DE PROGRAMACION
+# Programación con Python
 
----
+**Creado por:** [Diego Markiewicz](), [Gaspar Oddovero](https://www.linkedin.com/in/gaspar-o-122803175/)
+
+**Licencia: [LICENSE.md](LICENSE.md)**
+
+**Descripción del archivo:** Curso de programación Modulo I con Python
+
+**Palabras clave:** Python, programación, principiantes, ejercicios
 
 ## Profesores:
 
@@ -57,10 +63,15 @@ Objetivos:
 ### [14-Trabajo con archivos](/pythonCurso/CursoPython/14_trabajoconarchivos.md)
 
 ### [15-Evalución final]
+
 ---
+
 # Contenido del Curso Desarrollo Web Frontend
+
 ---
+
 # Contenido del Charla IA
 
 ### [Ejemplos Prompt](/pythonCurso/Inteligencia%20Artificial/prompt.md)
+
 ---

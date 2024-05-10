@@ -1,3 +1,13 @@
+# Programación con Python
+
+**Creado por:** [Diego Markiewicz](), [Gaspar Oddovero](https://www.linkedin.com/in/gaspar-o-122803175/)
+
+**Licencia: [LICENSE.md](LICENSE.md)**
+
+**Descripción del archivo:** Curso de programación Modulo I con Python
+
+**Palabras clave:** Python, programación, principiantes, ejercicios
+
 # 💻 ¿Qué es la programación? 💻
 
 ---
@@ -79,6 +89,7 @@ Aprender a programar es importante porque nos permite:
   - Senior: Mucha experiencia y conocimiento en su área de especialización.
 
 - Por rol:
+
   - Desarrollador: Se encarga de escribir el código.
   - QA: Se encarga de probar el software.
   - Gerente de proyecto: Se encarga de planificar y gestionar el desarrollo del software.
