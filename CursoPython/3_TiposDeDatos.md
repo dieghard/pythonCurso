@@ -5,7 +5,7 @@
     un popular programa de la BBC, era un programa de comedia de los años 1970. (Supuestamente obtuvimos el término "spam" de
     una parodia en ese programa.) Le gustó tanto el programa que decidió nombrar su nuevo
     lenguaje de programación en homenaje al mismo. Esto demuestra que los programadores tienen sentido del humor.
-    si bien este está deformado y es peculiar y, a veces, vive más allá del alcance de los simples mortales, pero existe.
+    si bien este es acido y es peculiar y, a veces, está más allá del entendimiento de los simples mortales,  existe.
 
 # 🛑 TIPOS DE DATOS EN PYTHON 🛑
 
