@@ -247,7 +247,7 @@ print (numero1 + numero2)
 - Ingrese el Autor :
 - Ingrese el Numero de Paginas :
 - Ingrese el Año de publicación :
-- Imprimir : " El Libro <nombre del libro> fue escrito por <autor> y tiene <numero de paginas> paginas, y fue publicado en el año <año de publicacion>"
+- Imprimir : " El Libro `<nombre del libro>` fue escrito por `<autor>` y tiene `<numero de paginas>` paginas, y fue publicado en el año <año de publicacion>"
 
 ---
 

@@ -1,35 +1,24 @@
-#No suma, concatena
-def calculadora(num1, num2, operacion):
-    if operacion == "+":
-      resultado = num1 + num2
-    elif operacion == "-":
-      resultado = num1 - num2
-    elif operacion == "*":
-      resultado = num1 * num2
-    elif operacion == "/":
-      resultado = num1 / num2
-    elif operacion == "%":
-      resultado == num1 % num2
-    return resultado
-num1 = input("Ingrese el primer numero:" )
-num2 = input("Ingrese el segundo numero:")
-operacion = input("Ingrese que tipo de operacion quieres realizar(+,-,*,/, %): ")
-print(calculadora(num1, num2, operacion))
+hola = "Este valor lo escribi yo 🧐"
+print(hola)
+print(variable)
+
+# variable = input("Este valor lo escribe el usuario, ingrese algo:")
+#Comentario de una sola linea
 
 
-"""def calculadora_que_anda(num1, num2, operacion):
-    if operacion == "+":
-      resultado = num1 + num2
-    elif operacion == "-":
-      resultado = num1 - num2
-    elif operacion == "*":
-      resultado = num1 * num2
-    elif operacion == "/":
-      resultado = num1 / num2
-    elif operacion == "%":
-      resultado == num1 % num2
-    return resultado
-num1 = int(input("Ingrese el primer numero:" ))
-num2 = int(input("Ingrese el segundo numero:"))
-operacion = input("Ingrese que tipo de operacion quieres realizar(+,-,*,/, %): ")
-print(calculadora_que_anda(num1, num2, operacion))"""
+
+
+
+
+
+'''
+print(f'{hola} El nombre que ingresaste es  {variable} -  y es un hermoso nombre.')
+'''
+
+'''
+zxvxzvxzvzxvxzvzxv
+variable2 = "Adios Mundo Cruel"
+resultado = 10099878
+
+print(f'el resultado es: {resultado}  Javier lo hizo la variable tiene el valor={variable} y la variable2 es = {variable2}')
+'''
