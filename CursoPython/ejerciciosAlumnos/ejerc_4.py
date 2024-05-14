@@ -27,6 +27,6 @@ print(f"Me gusta comer {comida_favor} y tomar {bebida_favor}, yeah")
 
 
 """Correcciones
-En el segundo ejercicio no uso el metodo Input
+En el segundo ejercicio no uso el funcion Input
 Se puede mejorar el nombre de algunas variables(último ejercicio)
 """
