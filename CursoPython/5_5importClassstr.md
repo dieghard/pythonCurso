@@ -20,17 +20,19 @@ else:
 
 ## SOLO TEXTO 🗒️
 
+```python
 entrada=input("Ingrese texto: ")
 
-ifentrada.isalpha() orentrada.isspace():
+if entrada.isalpha() orentrada.isspace():
 
     print(f"el text ingresado es {entrada}.")
 
 else:
 
     print("Error: Debe ingresar solo texto (letras o espacios).")
+```
 
-### Algunos ejemplos:
+Algunos ejemplos:
 
 | Método         | Descripción                                                                          | Ejemplo                                                                                                                                                  |
 | -------------- | ------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -226,6 +228,7 @@ print(hora_actual_en_nueva_york)
 # ejercicio de diferencias horarias
 
 ```python
+
 import datetime
 
 # Zona horaria actual (-3)
@@ -251,6 +254,27 @@ hora_nueva_york_formateada = hora_nueva_york.strftime('%H:%M:%S')
 print(f"Hora actual en tu zona horaria (-3): {hora_actual_formateada}")
 print(f"Hora actual en Nueva York (-5): {hora_nueva_york_formateada}")
 print(f"Diferencia de horas: {diferencia_horas}")
+```
+
+# CALCULAR LA FECHA DEL CUMPLEAÑOS
+
+```python
+from datetime import date, datetime
+
+# Calcular edad
+fecha_nacimiento = date(1990, 5, 25)  # Año, mes, día
+hoy = date.today()
+edad = hoy.year - fecha_nacimiento.year
+if hoy.month < fecha_nacimiento.month or (hoy.month == fecha_nacimiento.month and hoy.day < fecha_nacimiento.day):
+    edad -= 1
+print(f"Edad: {edad} años")
+
+# Calcular próximo cumpleaños
+proximo_cumple = datetime(hoy.year, fecha_nacimiento.month, fecha_nacimiento.day)
+if proximo_cumple < datetime.now():
+    proximo_cumple = proximo_cumple.replace(year=hoy.year + 1)
+diferencia = proximo_cumple - datetime.now()
+print(f"Próximo cumpleaños en: {diferencia.days} días")
 ```
 
 # El módulo random en Python proporciona funciones para generar números aleatorios. ejemplo:
