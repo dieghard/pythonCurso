@@ -1,4 +1,4 @@
-#  💥 Lista de operadores Aritmeticos 💥
+# 💥 Lista de operadores Aritmeticos 💥
 
 - ## Suma = +
 - ## Resta = -
@@ -9,22 +9,28 @@
 - ## Division Entera = // (Solo la parte entera de la division)
 
 ### Suma
+
 ```python
 operador_1 = 10
 operador_2 = 3
 suma = operador_1 + operador_2
 print ("el resultado de la suma es: ", suma)
-print(f"el resultado de la suma es: {suma}") 
+print(f"el resultado de la suma es: {suma}")
 ```
---- 
+
+---
+
 ### Resta
+
 ```python
 operador_1 = 10
 operador_2 = 3
 resta = operador_1 - operador_2
 print (f"el resultado de la resta es: {resta}")
 ```
---- 
+
+---
+
 ### Multiplicacion
 
 ```python
@@ -33,7 +39,9 @@ operador_2 = 3
 multiplica = operador_1 _ operador_2
 print (f"el resultado de la resta es: {multiplica}")
 ```
---- 
+
+---
+
 ### Division
 
 ```python
@@ -42,7 +50,9 @@ operador_2 = 3
 divide = operador_1 / operador_2
 print (f"el resultado de la division es: {divide}")
 ```
---- 
+
+---
+
 ### Division sin punto flotante (solo parte entera)
 
 ```python
@@ -51,7 +61,9 @@ operador_2 = 3
 divide = operador_1 // operador_2
 print (f"el resultado de la division es: {divide}")
 ```
---- 
+
+---
+
 ### Modulo = % (Resto o residuo de la division)
 
 ```python
@@ -60,7 +72,9 @@ operador_2 = 2
 restodivision = operador_1 % operador_2
 print (f"el resultado del resto de la division es : {restodivision}")
 ```
---- 
+
+---
+
 ### Exponenciacion = \*\*
 
 ```python
@@ -69,30 +83,39 @@ operador_2 = 2
 exponenciacion = operador_1 ** operador_2
 print (f"el resultado de la exponenciacion es : {exponenciacion}")
 ```
---- 
+
+---
 
 # Interpolacion de cadenas
-## Concatenar con la F y el resultado entre llaves. 
+
+## Concatenar con la F y el resultado entre llaves.
+
 ```python
 print(f"El resultado de la exponenciación es: {exponenciacion}")
 ```
 
 ## Triple Comillas (""")
+
 ### Nueva forma de comentar en Python varios renglones
+
 ---
 
 # OPERADORES
-# Asignacion 
+
+# Asignacion
 
 ### (-) = Asignacion (el igual es el operador de asignacion)
+
 ### ? += Incremento
+
 ejemplo
+
 - miVariable = 10
 - miVariable = miVariable + 1 #Incremento
   ó miVariable += 1 #Incremento
-! -= Decremento
+  ! -= Decremento
 
-```python 
+```python
 miVariable = miVariable - 1 #Decremento
 miVariable -= 1 #Decremento
 ```
@@ -105,22 +128,26 @@ miVariable _= _ 2 #Multiplicacion
 ```
 
 ### /= Division
+
 ```python
   miVariable = miVariable / 2 #division
   miVariable /= 2 #division
-  ```
+```
+
 - %= Modulo
 - \*\*= Exponenciacion
 - //= Division Entera
 
 ## COMPARACION
+
 ### Nos permite saber si los valores son igual o distintos
-  - ==
-  - !=
-  - *>*
-  - <
-  - *>=*
-  - <=
+
+- ==
+- !=
+- _>_
+- <
+- _>=_
+- <=
 
 #### Las sentencias de control son estructuras en programación que permiten modificar el flujo de ejecución de un programa. Estas sentencias permiten tomar decisiones, ejecutar bloques de código de manera condicional o repetir ciertas operaciones mientras se cumpla una condición.
 
@@ -129,6 +156,7 @@ a = 4
 b = 2
 resultado = (a == b) #Igualdad
 print (f"el resultado es: {resultado}")
+
 resultado = (a != b) #Distintos
 print (f"el resultado es: {resultado}")
 
@@ -144,7 +172,9 @@ print (f"el resultado es: {resultado}")
 resultado = (a <= b) #Menor o igual que
 print (f"el resultado es: {resultado}")
 ```
+
 ---
+
 ## Sentencia If y Else
 
 ```python
@@ -155,7 +185,9 @@ if a > b:
 else:
   print ("a no es mayor que b")
 ```
+
 ---
+
 ## Logicos
 
 - AND (y) devuelve true si ambos valores son verdaderos
@@ -186,17 +218,19 @@ print (f"el resultado es: {resultado}")
 ```
 
 # Actividades 💬
+
 # Ejercicios - 1
+
 - 1-Se solicita realizar un programa para mostrar el resultado de la division de dos números enteros
-
 - 2-Se solicita realizar un programa para calcular el residuo de la division de dos números enteros
-
 - 3-Se solicita realizar un programa para calcular el area y el perimetro de un rectangulo, para ello
+
   - debera crear las siguiente variables:
   - Alto (int)
   - Ancho (int)
+
   > El usuario debera proporcionar los valores de largo y ancho y despues imprimiro el resultado del area y el perimetro:
-  > Recuerde la formula Area = largo _ ancho // Perimetro = (largo + ancho) \* 2
+  > Recuerde la formula Area = largo \_ ancho // Perimetro = (largo + ancho) \* 2
 
 # Ejercicios - 2
 
@@ -238,7 +272,6 @@ else:
 
 > TIENDA DE LIBROS: Crear un programa que permita ingresar un libro y su autor, muestre el precio (float) y deje escribir si el envio es gratis(true o false)
 
-
 # Para imprimir toda la info utilizar el print
 
 ```python
@@ -260,6 +293,7 @@ if envioGratis != "SI" and envioGratis != "NO":
   envio es gratis: {envioGratis}
 ''')
 ```
+
 ---
 
 [VOLVER](/pythonCurso/readme.md)

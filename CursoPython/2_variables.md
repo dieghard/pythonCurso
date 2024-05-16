@@ -195,7 +195,8 @@ mi_lista = [1, 2, 3]
 ```python
 # Mal
 miVariable = 42
-
+strMivariable = "HOLA"
+intEdad =
 # Bien
 mi_variable = 42
 ```
