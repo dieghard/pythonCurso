@@ -1,8 +1,4 @@
-```
-
-```
-
-# COMO RESTRINGIR A SOLO NUMEROS???
+# COMO RESTRINGIR A SOLO NUMEROS??? 🧐🤯
 
 #### METODOS DE LA CLASE La clase str
 
@@ -22,7 +18,7 @@ else:
 	exit()
 ```
 
-## SOLO TEXTO
+## SOLO TEXTO 🗒️
 
 entrada=input("Ingrese texto: ")
 
@@ -57,7 +53,7 @@ else:
 | `lower()`      | Convierte todos los caracteres de la cadena a minúsculas.                            | `texto = "HOLA MUNDO"; texto_minusculas = texto.lower(); print(texto_minusculas)`(Salida: hola mundo)                                                    |
 | `capitalize()` | Convierte el primer caracter de la cadena a mayúscula y deja el resto en minúsculas. | `texto = "hola mundo"; texto_capitalizado = texto.capitalize(); print(texto_capitalizado)`(Salida:                                                       |
 
-# Para Numeros INT
+# Para Numeros INT 🕘
 
 | Método                     | Descripción                                                                                  | Ejemplo                                                                                                                                                                                                  |
 | -------------------------- | -------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -71,7 +67,7 @@ else:
 - La función `.isdigit()` es útil para validar cadenas de texto que contienen solo dígitos.
 - La función `int()` se puede usar para convertir valores a números enteros, pero es importante manejar posibles errores de conversión.
 
-# import
+# import 👨‍🚀👩‍🚀🚀
 
 En Python, la palabra clave import se utiliza para hacer que el código de un módulo esté disponible en otro.
 
@@ -109,9 +105,157 @@ OBTENER LA FECHA DEL DIA DE HOY
 > print(f"Fecha actual en dd/mm/yyyy: {fecha_formateada}")
 > ```
 
-### El módulo random en Python proporciona funciones para generar números aleatorios. ejemplo:
+### Obtener la hora actual :
+
+```python
+import datetime
+
+hora_actual = datetime.datetime.now()
+
+print(hora_actual)
+
 
 ```
+
+- Se importa el módulo `datetime` utilizando la instrucción `import`.
+- Se llama a la función `datetime.datetime.now()` para obtener la fecha y hora actuales. Esto devuelve un objeto `datetime`.
+- Se asigna el objeto `datetime` a una variable llamada `hora_actual`.
+- Se imprime la variable `hora_actual` utilizando la función `print()`.
+- **Formatear la hora:**
+
+Puedes formatear la hora actual a un formato específico utilizando el método `strftime()` del objeto `datetime`. Este método toma una cadena de formato como argumento y devuelve una cadena formateada.
+
+**Ejemplo:**
+
+```Python
+import datetime
+
+hora_actual = datetime.datetime.now().time()
+
+hora_formateada = hora_actual.strftime('%H:%M:%S')
+
+print(hora_formateada)
+```
+
+**Para obtener la hora actual en Python,** se utiliza la función `now()` del módulo `datetime`. Esta función devuelve un objeto `datetime` que representa la fecha y hora actuales, con una precisión de milisegundos.
+
+**Ejemplo:**
+
+Python
+
+```python
+import datetime
+
+hora_actual = datetime.datetime.now()
+
+print(hora_actual)
+```
+
+Este código imprimirá la siguiente salida:
+
+```
+2024-05-16 11:53:00.000000
+```
+
+**Explicación:**
+
+1. Se importa el módulo `datetime` utilizando la instrucción `import`.
+2. Se llama a la función `datetime.datetime.now()` para obtener la fecha y hora actuales. Esto devuelve un objeto `datetime`.
+3. Se asigna el objeto `datetime` a una variable llamada `hora_actual`.
+4. Se imprime la variable `hora_actual` utilizando la función `print()`.
+
+**Obtener solo la hora:**
+
+Si solo necesitas obtener la hora actual, puedes usar el método `time()` del objeto `datetime`. Este método devuelve un objeto `time` que representa la hora actual.
+
+**Ejemplo:**
+
+Python
+
+```python
+import datetime
+
+hora_actual = datetime.datetime.now().time()
+
+print(hora_actual)
+```
+
+Este código imprimirá la siguiente salida:
+
+```
+11:53:00.000000
+```
+
+**Formatear la hora:**
+
+Puedes formatear la hora actual a un formato específico utilizando el método `strftime()` del objeto `datetime`. Este método toma una cadena de formato como argumento y devuelve una cadena formateada.
+
+**Ejemplo:**
+
+```python
+import datetime
+
+hora_actual = datetime.datetime.now().time()
+
+hora_formateada = hora_actual.strftime('%H:%M:%S')
+
+print(hora_formateada)
+
+```
+
+En este ejemplo, la cadena de formato `'%H:%M:%S'` indica que queremos formatear la hora con el formato "HH:MM:SS", donde:
+
+- `%H` representa la hora en formato de 24 horas.
+- `%M` representa los minutos.
+- `%S` representa los segundos.
+
+**Zona horaria:**
+
+La función `now()` utiliza la zona horaria local por defecto. Si necesitas obtener la hora en una zona horaria diferente, puedes especificar la zona horaria como argumento de la función.
+
+```python
+import datetime
+
+zona_horaria = datetime.timezone(datetime.timedelta(hours=-3))
+
+hora_actual_en_nueva_york = datetime.datetime.now(zona_horaria)
+
+print(hora_actual_en_nueva_york)
+```
+
+# ejercicio de diferencias horarias
+
+```python
+import datetime
+
+# Zona horaria actual (-3)
+zona_horaria_actual = datetime.timezone(datetime.timedelta(hours=-3))
+
+# Zona horaria de Nueva York (-5)
+zona_horaria_nueva_york = datetime.timezone(datetime.timedelta(hours=-5))
+
+# Obtener hora actual en tu zona horaria
+hora_actual = datetime.datetime.now(zona_horaria_actual)
+
+# Obtener hora actual en Nueva York
+hora_nueva_york = datetime.datetime.now(zona_horaria_nueva_york)
+
+# Calcular la diferencia de horas
+diferencia_horas = hora_actual - hora_nueva_york
+
+# Formatear las horas para mostrarlas
+hora_actual_formateada = hora_actual.strftime('%H:%M:%S')
+hora_nueva_york_formateada = hora_nueva_york.strftime('%H:%M:%S')
+
+# Imprimir resultados
+print(f"Hora actual en tu zona horaria (-3): {hora_actual_formateada}")
+print(f"Hora actual en Nueva York (-5): {hora_nueva_york_formateada}")
+print(f"Diferencia de horas: {diferencia_horas}")
+```
+
+# El módulo random en Python proporciona funciones para generar números aleatorios. ejemplo:
+
+```python
 import random
 
 numero_aleatorio = random.randint(1, 10)
