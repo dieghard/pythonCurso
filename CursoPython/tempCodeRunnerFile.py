@@ -1,4 +1,7 @@
-import random
-numero_aleatorio = random.randint(1, 10)
-print(f"Número aleatorio entre 1 y 10: {numero_aleatorio}")
+texto = "texto123"
+es_alfanumerico = texto.isalnum()
+print(es_alfanumerico)  # Salida: True
 
+texto = "texto con espacios"
+es_alfanumerico = texto.isalnum()
+print(es_alfanumerico)  # Salida: False

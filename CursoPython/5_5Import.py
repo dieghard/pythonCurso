@@ -2,13 +2,27 @@
 ##* SOLO NUMEROS
 entrada = input("Ingrese un número: ")
 print (type(entrada))
+print (entrada.isdigit())
 
-
-if entrada.isdigit():
+if  entrada.isdigit()  :
     print(f"el numero ingresado es {entrada}.")
 else:
-    print("Error: Debe ingresar un número válido.")
+    print(f"Error: Debe ingresar un número válido. fijate lo que pusiste!{
+        entrada}")
     exit
+
+
+entrada = input("Ingrese un texto: ")
+print (type(entrada))
+print (entrada.isdigit())
+
+if not  entrada.isdigit()  :
+    print(f"el text ingresado es {entrada}.")
+else:
+    print(f"Error: Debe ingresar un texto válido. fijate lo que pusiste!{
+        entrada}")
+    exit
+
   ## SOLO TEXTO
 entrada = input("Ingrese texto: ")
 if entrada.isalpha() or entrada.isspace():
@@ -28,9 +42,8 @@ texto_capitalizado = texto.capitalize()
 print(texto_capitalizado)  # Salida: Hola mundo
 
 # upper(): Convierte todos los caracteres de la cadena a mayúsculas.
-texto = "Hola Mundo"
-texto_mayusculas = texto.upper()
-print(texto_mayusculas)  # Salida: HOLA MUNDO
+texto = input("ingrese un texto:")
+print(texto.upper())  # Salida: HOLA MUNDO
 
 #lower(): Convierte todos los caracteres de la cadena a minúsculas.
 texto = "HOLA MUNDO"
@@ -60,7 +73,7 @@ texto = "12345"
 es_digito = texto.isdigit()
 print(es_digito)  # Salida: True
 
-texto = "texto con numeros"
+texto = "texto con seis"
 es_digito = texto.isdigit()
 print(es_digito)  # Salida: False
 
@@ -113,3 +126,21 @@ import random
 numero_aleatorio = random.randint(1, 10)
 print(f"Número aleatorio entre 1 y 10: {numero_aleatorio}")
 
+
+# CALCULO DE CUMPLEAÑOS
+from datetime import date, datetime
+
+# Calcular edad
+fecha_nacimiento = date(1980, 5, 16)  # Año, mes, día
+hoy = date.today()
+edad = hoy.year - fecha_nacimiento.year
+if hoy.month < fecha_nacimiento.month or (hoy.month == fecha_nacimiento.month and hoy.day < fecha_nacimiento.day):
+    edad -= 1
+print(f"Edad: {edad} años")
+
+# Calcular próximo cumpleaños
+proximo_cumple = datetime(hoy.year, fecha_nacimiento.month, fecha_nacimiento.day)
+if proximo_cumple < datetime.now():
+    proximo_cumple = proximo_cumple.replace(year=hoy.year + 1)
+diferencia = proximo_cumple - datetime.now()
+print(f"Próximo cumpleaños en: {diferencia.days} días")
