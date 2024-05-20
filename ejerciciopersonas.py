@@ -1,5 +1,4 @@
 #Datos persona 1
-contador = 0
 nombre_apellido = input("Ingresa el nombre de la primer persona: ")
 direccion = input("Ingresa la direccion de la primer persona: ")
 edad = int(input("Ingresa la edad de la primer persona:"))
