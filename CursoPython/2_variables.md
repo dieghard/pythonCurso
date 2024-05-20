@@ -248,4 +248,4 @@ edad = 30
 
 ---
 
-[VOLVER](/pythonCurso/readme.md)
+[VOLVER](/readme.md)

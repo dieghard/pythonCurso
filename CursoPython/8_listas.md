@@ -251,4 +251,4 @@ lista_original = ["Ana", "Juan", "María", "Diego", "etc"]
 - ### Eliminar un producto de la lista.
 - ### Imprimir la lista
 ---
-[VOLVER](/pythonCurso/readme.md)
+[VOLVER](/readme.md)

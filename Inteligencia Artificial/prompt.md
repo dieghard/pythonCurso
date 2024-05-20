@@ -204,4 +204,4 @@ Completando estas preguntas nos puede dar pie a generar un discurso mucho más r
   - Formato de Salida: Este es de los puntos más importantes, ya que es como nosotros verémos la salida, podemos pedirlo de muchas formas y en muchisimos formatos que se acomoden más a nuestros gustos o sean más o menos practicos para lo que estamos consultando, en este caso se le solicito "Presentame la informacion en una tabla donde las columnas sean: Número de día, Platillo, calorías e ingredientes."
   - Tono: Este ultimo punto junto a Persona es uno de los menos importantes ya que pueden no utilizarse y el prompt final no varia mucho, pero viene especialmente bien para cambiar el tono del texto final, es muy util en discursos, tareas o para adecuarlo a contenido de redes sociales, en este caso: " Usa un tono formal para presentarme la informacion."
 ---
-[VOLVER](/pythonCurso/readme.md)
+[VOLVER](/readme.md)

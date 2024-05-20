@@ -296,4 +296,4 @@ if envioGratis != "SI" and envioGratis != "NO":
 
 ---
 
-[VOLVER](/pythonCurso/readme.md)
+[VOLVER](/readme.md)

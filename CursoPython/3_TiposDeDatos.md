@@ -251,4 +251,4 @@ print (numero1 + numero2)
 
 ---
 
-[VOLVER](/pythonCurso/readme.md)
+[VOLVER](/readme.md)

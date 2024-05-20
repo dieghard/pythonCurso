@@ -75,4 +75,4 @@
 
 [Hola Mundo](https://youtube.com/shorts/WBdNh8ZVNbc?si=OimcFIhgMS1QeoG9)
 [Ejemplos Lenguajes](1.a-EjemplosLenguajes.md)
-[VOLVER](/pythonCurso/readme.md)
+[VOLVER](/readme.md)

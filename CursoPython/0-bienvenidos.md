@@ -160,4 +160,4 @@ La lógica se aplica en la programación a través de: - Estructuras de control:
 - Un programa que busca un elemento en una lista: El programa utiliza un bucle para recorrer la lista y comparar cada elemento con el elemento que se busca.
 - Un programa que ordena una lista de números: El programa utiliza un algoritmo para ordenar los números de menor a mayor.
 
-[VOLVER](/pythonCurso/readme.md)
+[VOLVER](/readme.md)

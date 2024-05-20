@@ -74,4 +74,4 @@ Despegue
 
 ## ❎Tabla de Multiplicar❎ Realizar un programa que muestre la tabla de multiplicar de un número ingresado por el usuario.
 ---
-[VOLVER](/pythonCurso/readme.md)
+[VOLVER](/readme.md)
