@@ -4,8 +4,7 @@ nombre_apellido = input("Ingresa el nombre de la primer persona: ")
 direccion = input("Ingresa la direccion de la primer persona: ")
 edad = input("Ingresa la edad de la primer persona:")
 if not edad.isdigit()  :
-    print(f"Error: Debe ingresar una edad valida . fijate lo que pusiste!{
-        edad}")
+    print(f"Error: Debe ingresar una edad valida . fijate lo que pusiste!{edad}")
     exit
 suma_edad = suma_edad + edad
 
@@ -24,8 +23,7 @@ nombre_apellido= input("Ingresa el nombre de la segunda persona: ")
 direccion = input("Ingresa la direccion de la segunda persona: ")
 edad = input("Ingresa la edad de la segunda persona:")
 if not edad.isdigit()  :
-    print(f"Error: Debe ingresar una edad valida . fijate lo que pusiste!{
-        edad}")
+    print(f"Error: Debe ingresar una edad valida . fijate lo que pusiste!{edad}")
     exit
 suma_edad = suma_edad + edad
 posicion_cargada = 2
@@ -47,8 +45,7 @@ nombre_apellido= input("Ingresa el nombre de la tercera persona: ")
 direccion = input("Ingresa la direccion de la tercera persona: ")
 edad = input("Ingresa la edad de la tercera persona:")
 if not edad.isdigit()  :
-    print(f"Error: Debe ingresar una edad valida . fijate lo que pusiste!{
-        edad}")
+    print(f"Error: Debe ingresar una edad valida . fijate lo que pusiste!{edad}")
     exit
 suma_edad = suma_edad + edad
 
@@ -71,8 +68,7 @@ nombre_apellido= input("Ingresa el nombre de la cuarta persona: ")
 direccion = input("Ingresa la direccion de la cuarta persona: ")
 edad = input("Ingresa la edad de la cuarta persona:")
 if not edad.isdigit()  :
-    print(f"Error: Debe ingresar una edad valida . fijate lo que pusiste!{
-        edad}")
+    print(f"Error: Debe ingresar una edad valida . fijate lo que pusiste!{edad}")
     exit
 
 suma_edad = suma_edad + edad

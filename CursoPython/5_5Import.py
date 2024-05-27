@@ -7,8 +7,7 @@ print (entrada.isdigit())
 if  entrada.isdigit()  :
     print(f"el numero ingresado es {entrada}.")
 else:
-    print(f"Error: Debe ingresar un número válido. fijate lo que pusiste!{
-        entrada}")
+    print(f"Error: Debe ingresar un número válido. fijate lo que pusiste!{entrada}")
     exit
 
 
@@ -19,8 +18,7 @@ print (entrada.isdigit())
 if not  entrada.isdigit()  :
     print(f"el text ingresado es {entrada}.")
 else:
-    print(f"Error: Debe ingresar un texto válido. fijate lo que pusiste!{
-        entrada}")
+    print(f"Error: Debe ingresar un texto válido. fijate lo que pusiste!{entrada}")
     exit
 
   ## SOLO TEXTO
