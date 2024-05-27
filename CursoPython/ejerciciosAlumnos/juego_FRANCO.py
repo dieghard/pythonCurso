@@ -1,3 +1,4 @@
+#import msvcrt
 # Imprimir el borde superior
 print("")
 print("#"*80)
@@ -11,10 +12,10 @@ print("######                                                                   
 print("#"*80)
 print("")
 
-import msvcrt
-print("Presione una tecla para continuar...")# Esperar a que el usuario presione una tecla
-msvcrt.getch() #FUENTE: https://es.stackoverflow.com/questions/129724/c%C3%B3mo-realizar-un-presione-una-tecla-para-continuar-en-python-3-x
+#msvcrt.getch() #FUENTE: https://es.stackoverflow.com/questions/129724/c%C3%B3mo-realizar-un-presione-una-tecla-para-continuar-en-python-3-x
 
+print("Presione una tecla para continuar...")# Esperar a que el usuario presione una tecla
+input() #! Cuando el usuario toque una tecla, el programa sigue ejecutandose
 print("\n"*50)# Limpiar la pantalla
 
 import random
@@ -77,4 +78,4 @@ if continuar == True:
 if num_usr == numero_aleatorio : #Tercer comprobacion
     print(f"Muy bien felicitado, la pegaste! El numero era el numero {numero_aleatorio} acertaste en el {oportunidades}° intento!  " )
 else:
-    print("Lo siento PERDISTE")
+    print(f"Lo siento PERDISTE, el numero ganador era: {numero_aleatorio}")
