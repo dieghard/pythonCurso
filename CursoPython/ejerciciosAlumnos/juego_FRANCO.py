@@ -1,4 +1,5 @@
 #import msvcrt
+import time
 # Imprimir el borde superior
 print("")
 print("#"*80)
@@ -14,8 +15,8 @@ print("")
 
 #msvcrt.getch() #FUENTE: https://es.stackoverflow.com/questions/129724/c%C3%B3mo-realizar-un-presione-una-tecla-para-continuar-en-python-3-x
 
-print("Presione una tecla para continuar...")# Esperar a que el usuario presione una tecla
-input() #! Cuando el usuario toque una tecla, el programa sigue ejecutandose
+print("Cargando el juego, por favor espere...")# Esperar a que el usuario presione una tecla
+time.sleep(5) #! Cuando el usuario toque una tecla, el programa sigue ejecutandose
 print("\n"*50)# Limpiar la pantalla
 
 import random
