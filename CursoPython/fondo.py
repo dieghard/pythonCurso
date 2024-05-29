@@ -17,9 +17,9 @@ print("""
                             '  (> <) '
                     --------ooO-(_)-Ooo----------
 
+
 """)
 print("")
-print("Presione ENTER tecla para continuar...")
-input() # Esperar a que el usuario presione una tecla
+input("Presione ENTER tecla para continuar...") # Esperar a que el usuario presione una tecla
 # Limpiar la pantalla
 print("\n"*50)
