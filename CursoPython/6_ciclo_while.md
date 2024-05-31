@@ -8,7 +8,7 @@ El ciclo while en programación se utiliza para ejecutar repetidamente un bloque
 
 # While condicion:
 
-## Bloque de código a ejecutar mientras la condición sea verdadera
+Bloque de código a ejecutar mientras la condición sea verdadera
 
 # Flujo de ejecución:
 
@@ -20,58 +20,74 @@ El ciclo while en programación se utiliza para ejecutar repetidamente un bloque
 ---
 
 # Ejemplo sencillo:
+
 ```python
 contador = 0
 while contador < 5:
-print(f"Iteración {contador}")
-contador += 1
+	print(f"Iteración {contador}")
+	contador += 1
 ```
+
 En este ejemplo, el bloque de código dentro del while se ejecutará cinco veces, ya que contador se incrementa en cada iteración y la condición contador < 5 eventualmente se vuelve falsa.
 
 ---
 
 # Usos típicos:
+
 ---
+
 - Procesamiento de datos mientras se cumpla cierta condición.
 - Interacción con el usuario hasta que se ingrese un valor específico.
 - Implementación de bucles controlados por eventos.
+
 ---
+
 # ⚠Es importante⚠
+
 ### Tener cuidado al usar ciclos while para evitar caer en bucles infinitos. Asegúrate de que la condición se modifique en algún punto dentro del bloque de código o de lo contrario, el bucle continuará ejecutándose indefinidamente.
+
 ---
 
 ```python
 while True: # Bloque de código
-clave = input("ingrese la clave para acceder:")
-if clave == "1234":
-print("Al fin lo conseguiste... sos un HACKER")
-True
-break
-else:
-print("clave incorrecta")
+	clave = input("ingrese la clave para acceder:")
+	if clave == "1234":
+		print("Al fin lo conseguiste... sos un HACKER")
+		True
+		break
+	else:
+	print("clave incorrecta")
 ```
+
 ---
+
 # Actividades 💬
-## 🚀Nos vamos a la nuna🚀 Realiza el programa para la nasa que cuente regresviamente de 10 a 0 y luego muestre un mensaje de despegue
+
+## 🚀Nos vamos a la Luna🚀 Realiza el programa para la nasa que cuente regresviamente de 10 a 0 y luego muestre un mensaje de despegue
+
 ### Ejemplo:
+
 ```python
-10 
-9 
-8 
-7 
-6 
-5 
-4 
-3 
-2 
-1 
-0 
-Despegue
+10
+9
+8
+7
+6
+5
+4
+3
+2
+1
+0
+Despegue 🚀
 ```
+
 ## 🔮Adivina el numero🔮 Realizar un programa que adivine un numero con 3 intentos para adivinar el numero secreto entre 1 y 10
 
 ## 💻SUMADORA💻 Realizar un programa que permita sumar numeros hasta que se ingrese un 0
 
 ## ❎Tabla de Multiplicar❎ Realizar un programa que muestre la tabla de multiplicar de un número ingresado por el usuario.
+
 ---
+
 [VOLVER](/readme.md)

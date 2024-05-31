@@ -19,20 +19,28 @@ while True:
 
     # Recorre cada cara detectada
     for (x, y, w, h) in caras:
-        # Convierte la región de la cara al espacio de color YCbCr
-        region_cara = cv2.cvtColor(frame[y:y+h, x:x+w], cv2.COLOR_BGR2YCbCr)
+        # Crea una máscara con la forma del rostro y color azul
+        mascara = np.zeros((h, w), dtype=np.uint8)
+        cv2.rectangle(mascara, (0, 0), (w, h), (255, 255, 255), -1)
 
-        # Aplica un umbral para aislar el rostro
-        mascara = cv2.inRange(region_cara, np.array([0, 133, 77]), np.array([255, 173, 127]))
+        # Aplica un desenfoque gaussiano a la máscara para suavizar los bordes
+        mascara = cv2.GaussianBlur(mascara, (5, 5), 0)
 
         # Invierte la máscara para que el rostro sea negro y el fondo blanco
         mascara_invertida = 255 - mascara
 
         # Aplica la máscara invertida a la región de la cara
-        region_cara = cv2.cvtColor(frame[y:y+h, x:x+w], cv2.COLOR_BGR2YCrCb)
+        region_cara_con_mascara = cv2.bitwise_and(frame[y:y+h, x:x+w], frame[y:y+h, x:x+w], mask=mascara_invertida)
 
+        # Aplica un desenfoque a la cara
+        #cara_desenfocada = cv2.GaussianBlur(region_cara_con_mascara, (99, 99), 30)
+        # Convierte la cara a escala de grises
+        cara_gris = cv2.cvtColor(region_cara_con_mascara, cv2.COLOR_BGR2GRAY)
+        cara_color = cv2.cvtColor(cara_gris, cv2.COLOR_GRAY2BGR)
         # Combina la región de la cara con la máscara con el resto del frame
-        frame[y:y+h, x:x+w] = cv2.bitwise_and(frame, frame, mask=region_cara_con_mascara)
+        # frame[y:y+h, x:x+w] = cv2.addWeighted(region_cara_con_mascara, 0.5, frame[y:y+h, x:x+w], 0.5, 0)
+      # Combina la región de la cara con la máscara con el resto del frame
+        frame[y:y+h, x:x+w] = cv2.addWeighted(cara_color, 0.5, frame[y:y+h, x:x+w], 0.5, 0)
 
     # Muestra el frame con la máscara aplicada
     cv2.imshow('Reconocimiento Facial con Máscara', frame)
