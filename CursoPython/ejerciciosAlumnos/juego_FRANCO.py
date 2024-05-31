@@ -27,7 +27,7 @@ continuar =True
 num_usr = input("Que numero eligio la compu entre el 1 y el 10 ? : ")
 if num_usr.isdigit() :
     num_usr=int(num_usr)
-    if not num_usr <= 10 and num_usr >= 1: # RESTRICCION DEL (1,10)
+    if not num_usr <= 10 and num_usr >= 1:
         print("Solo ingresar numeros del 1 al 10")
         exit()
 elif num_usr.isalpha():
