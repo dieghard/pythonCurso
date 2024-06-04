@@ -42,6 +42,7 @@ for caracter in cadena:
     print(caracter)
 
 cadena = "Hola" #arreglo de caracteres --- verlo con debugger
+
 for caracter in cadena:
     print(caracter)
     if(caracter=="H"):
@@ -59,7 +60,8 @@ else:
   print('FIN DEL PROGRAMA')
 
 
-  #PRACTICAS
+
+#  #PRACTICAS
   #1- REALIZAR UN PROGRAMA QUE MUESTRE LOS NUMEROS DE 0 A 10
   #2- REALIZAR UN PROGRAMA QUE MUESTRE LOS NUMEROS DE 10 A 0
   #3- REALIZAR UN PROGRAMA QUE MUESTRE LOS NUMEROS PARES DE 0 A 10

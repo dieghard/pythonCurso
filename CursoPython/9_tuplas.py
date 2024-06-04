@@ -9,32 +9,30 @@ tupla_2 = ("Hola", "Mundo")
 
 # Tupla con tres elementos
 tupla_3 = ("Hola", "Mundo", "!")
-Usa el código con precaución.
-Las tuplas se pueden usar para almacenar cualquier tipo de dato, como números, cadenas, listas, diccionarios, etc.
 
-Las tuplas tienen las siguientes ventajas:
+# Las tuplas se pueden usar para almacenar cualquier tipo de dato, como números, cadenas, listas, diccionarios, etc.
 
-Son inmutables: Esto significa que no se pueden modificar una vez creadas. Esto puede ser útil para garantizar la integridad de los datos.
-Son eficientes: Las tuplas son más eficientes que las listas en términos de memoria y velocidad.
-Son compatibles con la indexación: Se puede acceder a los elementos de una tupla por su índice.
-Las tuplas tienen las siguientes desventajas:
+# Las tuplas tienen las siguientes ventajas:
 
-Son inmutables: Esto significa que no se pueden modificar una vez creadas. Esto puede ser un inconveniente si necesitas modificar los datos.
-No son tan flexibles como las listas: Las listas se pueden modificar, mientras que las tuplas no.
-En general, las tuplas son una buena opción para almacenar colecciones de datos que no necesitan ser modificadas.
+# Son inmutables: Esto significa que no se pueden modificar una vez creadas. Esto puede ser útil para garantizar la integridad de los datos.
+# Son eficientes: Las tuplas son más eficientes que las listas en términos de memoria y velocidad.
+# Son compatibles con la indexación: Se puede acceder a los elementos de una tupla por su índice.
+# Las tuplas tienen las siguientes desventajas:
 
-Aquí hay algunos ejemplos de cómo se pueden usar las tuplas:
+# Son inmutables: Esto significa que no se pueden modificar una vez creadas. Esto puede ser un inconveniente si necesitas modificar los datos.
+# No son tan flexibles como las listas: Las listas se pueden modificar, mientras que las tuplas no.
+# En general, las tuplas son una buena opción para almacenar colecciones de datos que no necesitan ser modificadas.
 
-Almacenar información sobre una persona:
-Python
+# Aquí hay algunos ejemplos de cómo se pueden usar las tuplas:
+
+# Almacenar información sobre una persona:
+
 persona = ("Juan", "Pérez", 30)
-Usa el código con precaución.
-Almacenar las coordenadas de un punto:
-Python
+# Almacenar las coordenadas de un punto:
+
 punto = (10, 20)
-Usa el código con precaución.
-Almacenar los resultados de una función:
-Python
+# Almacenar los resultados de una función:
+
 def sumar(a, b):
     return a + b
 
