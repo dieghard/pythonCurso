@@ -19,7 +19,16 @@ for i in range(10):
 for i in range(10, -1, -1):
   print(i)
 ```
-#### En este ejemplo, el ciclo for se ejecuta 5 veces. La variable de control i se inicializa en 0 y se incrementa en 1 en cada iteración. El bloque de código dentro del ciclo se ejecuta 5 veces, imprimiendo los valores de i desde 0 hasta 4.
+---
+# La funcion range()
+### La funcion range() devuelve una secuencia de numeros empezando en 0 (por defecto), incrementando 1 (por defecto) y terminando en un numero especificado, por ejemplo:
+
+```python
+for i in range(10): #Contará del 0 al 9(10 numeros), de 1 en 1 y parará en la decima iteracion.
+  print(i)
+```
+## La sintaxis completa de la funcion es ***range(Inicio, Fin, Incremento)***, siendo la primera y la ultima opcionales.
+---
 
 # 🛑 Ventajas del ciclo for: 🛑
 
