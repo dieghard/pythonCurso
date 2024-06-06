@@ -85,6 +85,8 @@ for letra in 'ARGENTINA':
 - Realizar un programa que muestre los numeros impares de 0 a 10.
 - Realizar un programa que muestre los numeros pares de 0 a 10 y luego los impares de 0 a 10.
 - Realizar un programa que muestre la palabra argentina y por cada palabra muestre otra palabra ejemplo.
+- Realiza un programa que imprima los numeros del 1 al 150, pero cuando el numero sea multiplo de 3, imprima: "el (NUMERO) es multiplo de 3" y cuando sea multiplo de 5, imprima: "el (NUMERO) es multiplo de 5".
+- Realizar un programa que muestre la tabla de multiplicar(hasta la del 20) de un numero dado por el usuario.
   
 
 ---
