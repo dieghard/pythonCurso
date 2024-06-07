@@ -19,7 +19,7 @@ if eleccion_usuario == "1" or eleccion_usuario == "CARA": #Para que sea mas faci
 elif eleccion_usuario == "2" or eleccion_usuario == "CRUZ":
     eleccion_usuario = "CRUZ"
 else: 
-    print("Pusiste") #Si el usuario no coloco 1, 2, Cara o Cruz pasa de largo y termina el programa
+    print("Pusiste otra cosa") #Si el usuario no coloco 1, 2, Cara o Cruz pasa de largo y termina el programa
     exit()
 
 
@@ -34,4 +34,3 @@ elif eleccion_usuario == eleccion_PC:
 
 else:
     print(f"Perdiste!!!! Elejiste {eleccion_usuario} y la PC {eleccion_PC}")
-
