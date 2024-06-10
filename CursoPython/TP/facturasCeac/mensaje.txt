@@ -1,0 +1,43 @@
+Sr. Asociado: ODDOVERO DIEGO MARTIN
+Lista de Comprobantes:
+
+Agua 
+Venc.: 18/06/2024 $6.703,35 
+https://levalle.micoop.com.ar/impresion?A0005770578U00000630S00003462
+Pagar
+https://levalle.micoop.com.ar/comprobantes?user=3462&pagar[5770578]=true
+
+Cable 
+Venc.: 18/06/2024 $10.961,93 
+https://levalle.micoop.com.ar/impresion?C0005777438U00001989S00003462
+Pagar
+https://levalle.micoop.com.ar/comprobantes?user=3462&pagar[5777438]=true
+
+Energia 
+Venc.: 18/06/2024 $34.782,04 
+https://levalle.micoop.com.ar/impresion?E0005763011U00000312S00003462
+Pagar
+https://levalle.micoop.com.ar/comprobantes?user=3462&pagar[5763011]=true
+
+Energia 
+Venc.: 18/06/2024 $40.158,45 
+https://levalle.micoop.com.ar/impresion?E0005764368U00003068S00003462
+Pagar
+https://levalle.micoop.com.ar/comprobantes?user=3462&pagar[5764368]=true
+
+Internet 
+Venc.: 18/06/2024 $7.592,95 
+https://levalle.micoop.com.ar/impresion?I0005777190U00001978S00003462
+Pagar
+https://levalle.micoop.com.ar/comprobantes?user=3462&pagar[5777190]=true
+
+Internet 
+Venc.: 18/06/2024 $8.753,76 
+https://levalle.micoop.com.ar/impresion?I0005777191U00001979S00003462
+Pagar
+https://levalle.micoop.com.ar/comprobantes?user=3462&pagar[5777191]=true
+
+
+
+Realiza un pago total por todos los comprobantes desde 
+https://levalle.micoop.com.ar/comprobantes?user=3462&pagar[5770578]=true&pagar[5777438]=true&pagar[5763011]=true&pagar[5764368]=true&pagar[5777190]=true&pagar[5777191]=true
