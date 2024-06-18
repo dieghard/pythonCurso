@@ -1,14 +1,12 @@
 #Recuerda usar pip install groq
-import os
-
 from groq import Groq
 
 client = Groq(
-    api_key="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",
+    api_key="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",
 )
 while True:
     print("Hola, a continuacion podras preguntarle lo que quieras a la inteligencia artificial")
-    
+
     while True:
         prompt = input("Ingrese lo que quieras preguntarle a la Inteligencia Artificial, si deseas salir puedes colocar la letra Q(quit): ").capitalize()
         if prompt == "Q":
