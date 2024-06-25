@@ -8,7 +8,7 @@ def escuchar():
     with sr.Microphone() as source:
         print("Hable (tiene 10 segundos): ")
         r.adjust_for_ambient_noise(source)
-        audio = r.listen(source, timeout=10, phrase_time_limit=5)
+        audio = r.listen(source, timeout=10, phrase_time_limit=10)
         try:
             prompt = r.recognize_google(audio, language='es-ES')
             print(f"Dijiste: {prompt}")
