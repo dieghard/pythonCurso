@@ -18,7 +18,7 @@ r = sr.Recognizer()
 # Configura el micrófono
 with sr.Microphone() as source:
     print("Hable (tiene 10 segundos): ")
-    
+
     # Ajusta el nivel de ruido ambiental para obtener mejores resultados
     r.adjust_for_ambient_noise(source)
 
@@ -40,7 +40,7 @@ with sr.Microphone() as source:
 client = Groq(
     api_key = "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",
 )
-chat_completion = client.chat.completions.create(
+interaccion_chat = client.chat.completions.create(
     messages = [
         {
             "role" : "user",
@@ -53,7 +53,7 @@ chat_completion = client.chat.completions.create(
 
 
 #Cuarto obtenemos un resultado por medio de pyttsx3
-
+print (interaccion_chat.choices[0].message.content)
 #print(chat_completion.choices[0].message.content)
-engine.say(chat_completion.choices[0].message.content)
+engine.say(interaccion_chat.choices[0].message.content)
 engine.runAndWait()
