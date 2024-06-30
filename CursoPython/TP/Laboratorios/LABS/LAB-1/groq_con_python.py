@@ -1,4 +1,7 @@
 #API: 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
+#Primero deberiamos tener instalado Groq y pyttsx3
+# pip install groq
+# pip install pyttsx3
 from groq import Groq
 import pyttsx3
 
@@ -28,5 +31,5 @@ while True:
     engine = pyttsx3.init()
     engine.say(interaccion_chat.choices[0].message.content)
     engine.runAndWait()
-    #print(interaccion_chat.choices[0].message.content)
+    print(interaccion_chat.choices[0].message.content)
 
