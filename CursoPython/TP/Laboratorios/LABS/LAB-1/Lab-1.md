@@ -53,11 +53,85 @@ Imagina que tienes una aplicación de clima que necesita obtener los datos meteo
 ### Nuestros pasos para realizar el programa completo serán los siguientes:
 ## 1- Realizar un programa que haga hablar a nuestra computadora utilizando la libreria pyttsx3. 
 
+```python
+#Un pequeño resumen del uso que le dimos!
+#Recorda tambien que podemos cambiar las voces y la velocidad, esta todo en el archivo que hicimos la primer clase(Martes 11)
+import pyttsx3
+engine = pyttsx3.init()
+engine.say("Hola ¿como estás?")
+engine.runAndWait()
+```
+
 ## 2- Realizar un programa que escuche nuestra voz y la transcriba a texto utilizando la libreria SpeechRecognition
+```python
+#¿Como se usa SpeechRecognition?
+import speech_recognition as sr
+r =sr.Recognizer()
 
+with sr.Microphone() as source:
+    print("Hable: ")
+    audio = r.listen(source)
+    try:
+        text = r.recognize_google(audio, language='es-ES')
+        print(f"Dijiste: {text}")
+    except sr.UnknownValueError:
+        print("Lo siento, no he podido entender lo que has dicho.")
+    except sr.RequestError:
+        print("Lo siento, ha habido un problema al intentar comunicarme con el servicio de Google.")
+```
 ## 3- Realiza un programa que permita consultar a la API de groq, mandandole un mensaje con un input y recibiendo por terminal la respuesta.
+```python
+#Estructura Basica de Groq, esta se obtiene 
+#directamente de la documentacion oficial
+#en https://console.groq.com/docs/quickstart
+from groq import Groq
 
+client = Groq(
+    api_key="TU LLAVE API",#Modificamos esta linea para no usar os
+)
+
+chat_completion = client.chat.completions.create(
+    messages=[
+        {
+            "role": "user",
+            "content": "Explain the importance of fast language models",
+        }
+    ],
+    model="llama3-8b-8192",
+)
+
+print(chat_completion.choices[0].message.content)
+```
+### Pasos para obtener tu API KEY
+- 1: Ingresar a https://console.groq.com/ e iniciar sesion con google.
+- 2: Dirigirte en el panel izquierdo a "API Keys"
+- 3: Utilizar el boton que dice "Create API Key", colocar un nombre identificativo para esta llave API y darle siguiente.
+- 4: Muy importante ***Copiar la API Key generada*** y pegarla en un archivo .txt o en un comentario de python, ya que una vez generada no la podremos volver a copiar.
+- 5: Modificar el codigo que copiamos de Quickstart para usar nuestra API sin necesidad de utilizar os
 ## 4- Realiza un programa que permita consultar la API de groq siendo el input nuestra voz y que nos de la respuesta por medio de sonido.
 
-Documentacion API groq: https://console.groq.com/docs/quickstart
-
+---
+## Repasando algunas lineas de codigo:
+### La palabra reservada ***as*** sirve para asignarle el nombre a una biblioteca importada, en este caso le asignamos ***sr*** a speech_recognition para que nos sea mas comodo trabajar.
+```python
+import speech_recognition as sr
+```
+### La palabra reservada ***whit*** en Python se usa para simplificar el manejo de recursos que necesitan ser configurados y limpiados adecuadamente, como archivos, conexiones de red, o en este caso, el micrófono. La principal ventaja de usar with es que asegura que los recursos sean liberados correctamente después de su uso, incluso si ocurre un error durante su uso.
+```python
+with sr.Microphone() as source:
+```
+### El bloque ***try except*** se usa para manejar errores que pueden ocurrir durante la ejecución del código. 
+- #### ***try***: Intenta ejecutar el código dentro de este bloque. Si todo funciona bien, se ejecuta sin problemas.
+- #### ***except sr.UnknownValueError***: Si ocurre un error del tipo UnknownValueError, significa que el reconocedor de habla no pudo entender el audio. En este caso, se ejecuta el siguiente bloque de código.
+- #### ***except sr.RequestError***: Si ocurre un error del tipo RequestError, significa que hubo un problema al intentar comunicarse con el servicio de Google. En este caso, se ejecuta el siguiente bloque de código.
+```python
+    try:
+        text = r.recognize_google(audio, language='es-ES')
+        print(f"Dijiste: {text}")
+    except sr.UnknownValueError:
+        print("Lo siento, no he podido entender lo que has dicho.")
+    except sr.RequestError:
+        print("Lo siento, ha habido un problema al intentar comunicarme con el servicio de Google.")
+```
+## ¡El try except o conocido como Try Catch lo veremos más a fondo en proximas clases!
+---
