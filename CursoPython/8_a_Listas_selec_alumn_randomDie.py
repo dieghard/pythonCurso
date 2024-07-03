@@ -1,10 +1,11 @@
 import random
-lista_alumnos = ["Monica", "maricel", "carlos", "guillermo","paula", "fermin", "gonzalo", "javier", "Jonathan", "florencia", "leticia", "shirley", "patricia", "marcelo"]
+lista_alumnos = ["salvador", "brisa","cristian", "emanuel", "franco", "camila", "pamela", "eugenia"]
 
-alumnos_pasados = ["Monica", "maricel", "carlos", "guillermo","paula", "fermin", "gonzalo", "javier", "Jonathan", "florencia"]
+alumnos_pasados = ["brisa"]
 
 alumnos_restantes = [alumno for alumno in lista_alumnos if alumno not in alumnos_pasados]
-#utilizamos una comprensión de lista para filtrar y crear una nueva lista llamada alumnos_restantes a partir de la lista original lista_alumnos
+#utilizamos una comprensión de lista para filtrar y crear una nueva lista llamada 
+#alumnos_restantes a partir de la lista original lista_alumnos
 
 lista_alumnos_seleccion = random.choice(alumnos_restantes)
 print(lista_alumnos_seleccion)
@@ -12,14 +13,17 @@ print(lista_alumnos_seleccion)
 # Las comprensiones de lista en Python son una forma concisa de crear listas.
 # POR EJEMPLO:
 
-# Filtrar elementos: Se puede usar una condición para filtrar elementos de una lista original y crear una nueva lista solo con los elementos que cumplan esa condición.
+# Filtrar elementos: Se puede usar una condición para filtrar elementos de una lista original
+# y crear una nueva lista solo con los elementos que cumplan esa condición.
 
-nombres_con_p = [alumno for alumno in lista_alumnos if alumno.startswith('p')]
+nombres_con_p = [alumno for alumno in lista_alumnos if alumno.startswith('c')]
 
+
+terminado_con_o = [alumno for alumno in lista_alumnos if alumno.endswith('a')]
 #Filtrar con múltiples condiciones:
 
 #Queremos una lista de alumnos que tengan tanto la letra "a" como la "o" en su nombre. Podemos usar una comprensión de listas con dos condiciones:
-alumnos_con_ao = [alumno for alumno in lista_alumnos if "a" in alumno and "o" in alumno]
+alumnos_con_ao = [alumno for alumno in lista_alumnos if "a" in alumno or "o" in alumno and alumno.startswith('f')]
 
 
 # Aplicar una función a cada elemento: Se puede aplicar una operación o función a cada elemento de la lista original.
@@ -31,6 +35,7 @@ lista_alumnos_mayuscula = [alumno.upper() for alumno in lista_alumnos]
 nombres_restantes_mayuscula = [alumno.upper() for alumno in alumnos_restantes if alumno not in alumnos_pasados]
 
 
+
 # Crear listas de listas: Puedes crear listas de listas usando comprensiones anidadas.
 lista_alumnos_longitud = [[alumno, len(alumno)] for alumno in lista_alumnos]
 
@@ -38,10 +43,12 @@ lista_alumnos_longitud = [[alumno, len(alumno)] for alumno in lista_alumnos]
 parejas_alumnos = [(alumno1, alumno2) for alumno1 in lista_alumnos for alumno2 in lista_alumnos if alumno1 != alumno2]
 
 # Incluir un else: Aunque no es tan común, se puede incluir un bloque else en la comprensión de lista, pero esto suele hacerse más en comprensiones de listas que están aplicando una función o transformación a los elementos.
-lista_transformada = [alumno.upper() if alumno[0].lower() < 'm' else alumno.lower() for alumno in lista_alumnos]
+lista_transformada = [alumno.upper() if alumno[0].lower() >= 'g' else alumno.lower() for alumno in lista_alumnos]
+
 
 #Agrupar elementos por una condición:
-#Queremos agrupar los alumnos por la primera letra de su nombre. Podemos usar una comprensión de listas :
+#Queremos agrupar los alumnos por la primera letra de su nombre. 
+#Podemos usar una comprensión de listas :
 alumnos_agrupados = []
 for alumno in lista_alumnos:
   primera_letra = alumno[0]
@@ -56,8 +63,8 @@ print(alumnos_agrupados)
 # Queremos crear una lista de números del 1 al 100 pero con saltos de 2.
 # Podemos usar una comprensión de listas con la función range:
 
-numeros_con_salto = [numero for numero in range(1, 101, 2)]
-print(numeros_con_salto)
+numeros_con_salto = [numero for numero in range(2, 101, 2)]
+
 # Obtener el índice y el elemento de una lista:
 # Queremos crear una lista de tuplas donde cada tupla contenga el índice y el elemento de la lista original. Podemos usar la función enumerate:
 
