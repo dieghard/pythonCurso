@@ -1,5 +1,6 @@
-import pprint
-lista_alumnos = ["Monica", "maricel", "carlos", "guillermo","paula", "fermin", "gonzalo", "javier", "Jonathan", "florencia", "leticia", "shirley", "patricia", "marcelo"]
-alumnos_con_indice = [(indice, alumno) for indice, alumno in enumerate(lista_alumnos)]
-#print(alumnos_con_indice)
-pprint.pprint(alumnos_con_indice)
+texto = "Este es un ejemplo de texto con palabras clave."
+palabras_clave = ["ejemplo", "texto", "clave"]
+
+palabra_detectada = next(palabra for palabra in palabras_clave if palabra in texto)
+
+print(f"Palabra detectada: {palabra_detectada}")  # Salida: Palabra detectada: ejemplo
