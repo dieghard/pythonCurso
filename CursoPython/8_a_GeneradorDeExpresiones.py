@@ -1,12 +1,18 @@
 # Generadores de Expresiones en Python
-# Los generadores de expresiones son una característica poderosa y eficiente en Python
+# Los generadores de expresiones son una característica poderosa y
+# eficiente en Python
 # para crear secuencias de datos de manera concisa.
-# Son similares a las comprensiones de lista, pero con algunas diferencias clave en términos de sintaxis y comportamiento.
-#  A diferencia de las listas, que almacenan todos los elementos a la vez, los generadores liberan memoria al generar elementos uno a uno. Esto los hace ideales para trabajar con grandes conjuntos de datos o cuando la memoria es limitada.
+# Son similares a las "comprensiones de lista", pero con algunas diferencias 
+# clave en 
+# términos de sintaxis y comportamiento.
+#  A diferencia de las listas, que almacenan todos los elementos a la vez, 
+# los generadores liberan memoria al generar elementos uno a uno.
+# Esto los hace ideales para trabajar con grandes conjuntos de datos 
+# o cuando la memoria es limitada.
 # Sintaxis Básica
 # La sintaxis de un generador de expresiones es:
 
-#(expresion for item in iterable [if condicion])
+# (expresion for item in iterable [if condicion])
 
 # expresion: Es el valor que se generará para cada item.
 # item: Variable que toma cada valor del iterable.
@@ -15,7 +21,8 @@
 
 # Características Principales
 
-# Paréntesis: Usan paréntesis () en lugar de corchetes [] (que se usan en comprensiones de lista).
+# Paréntesis: Usan paréntesis () en lugar de corchetes [] 
+# (que se usan en comprensiones de lista).
 # Evaluación Perezosa: Los valores se generan solo cuando se solicitan, lo que ahorra memoria.
 # Uso Único: Una vez que se han consumido todos los elementos, el generador se agota y no puede reutilizarse.
 # Eficiencia de Memoria: Ideal para trabajar con grandes conjuntos de datos o secuencias infinitas.
@@ -26,17 +33,19 @@
 texto = "Este es un ejemplo de texto con palabras clave."
 palabras_clave = ["ejemplo", "texto", "clave"]
 
-palabra_detectada = next(palabra for palabra in palabras_clave if palabra in texto)
+palabra_detectada = next(palabra   for palabra in palabras_clave if palabra in texto)
+#                       (expresion for item     in iterable      [if condicion]     )
+# expresion: Es el valor que se generará para cada item.
+# item: Variable que toma cada valor del iterable.
+# iterable: Secuencia sobre la que se itera.
+# if condicion: (Opcional) Filtro para incluir solo ciertos elementos.
 
 print(f"Palabra detectada: {palabra_detectada}")  # Salida: Palabra detectada: ejemplo
-
-
 
 cuadrados = (x**2 for x in range(10))
 # PARA IMRIMIRLOS:
 # Definimos el generador de expresiones
 cuadrados = (x**2 for x in range(10))
-
 # Método 1: Usando un bucle for
 print("Método 1: Usando un bucle for")
 for cuadrado in cuadrados:
@@ -66,10 +75,14 @@ print([x for x in cuadrados])
 cuadrados = (x**2 for x in range(10))  # Recreamos el generador
 print("Método 5: Usar join con map")
 print(", ".join(map(str, cuadrados))) # Abajo se expolica el uso de map y join
-#La función map toma dos argumentos: una función y un iterable. En este caso, la función str convierte cada número al cuadrado en una cadena de texto. El resultado es un nuevo iterable que contiene las cadenas de texto de los cuadrados.
+#La función map toma dos argumentos: una función y un iterable. En este caso, 
+# 
+# la función str convierte cada número al cuadrado en una cadena de texto. 
+# El resultado es un nuevo iterable que contiene las cadenas de texto de los cuadrados.
 numeros_como_strings = map(str, cuadrados)
 # Usar join:
-# La función join concatena elementos de un iterable en una cadena, separándolos por un delimitador especificado. En este caso, utilizamos , como delimitador para unir las cadenas de texto de los cuadrados.
+# La función join concatena elementos de un iterable en una cadena, 
+# separándolos por un delimitador especificado. En este caso, utilizamos , como delimitador para unir las cadenas de texto de los cuadrados.
 resultado = ", ".join(numeros_como_strings)
 print(resultado)
 
@@ -91,6 +104,7 @@ pares_filtrados = (n for n in range(10) if n % 2 == 0)
 # Sintaxis más concisa: Utilizan una sintaxis compacta similar a las listas para definir la lógica de creación.
 # Eficiencia para conjuntos de datos pequeños: Adecuadas para conjuntos de datos pequeños que caben en la memoria.
 # Resultado completo: Almacenan la lista completa en la memoria antes de devolverla.
+# VS
 # Generadores de expresiones:
 
 # Crean iterables: Su objetivo principal es generar elementos uno a uno, sin almacenar toda la secuencia.
@@ -101,9 +115,10 @@ pares_filtrados = (n for n in range(10) if n % 2 == 0)
 #EJEMPLO
 #Crear una lista de cuadrados de 1 a 10:
 #Comprensión de lista:
-cuadrados_lista = [x**2 for x in range(1, 11)]
+cuadrados_lista = [x**2 for x in range(1, 110000)]
+print(*cuadrados_lista)
 #Generador de expresión:
-cuadrados_generador = (x**2 for x in range(1, 11))
-
+cuadrados_generador = (x**2 for x in range(1, 110000))
+print(*cuadrados_generador)
 
 
