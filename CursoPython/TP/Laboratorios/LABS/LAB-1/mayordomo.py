@@ -9,8 +9,8 @@ import time
 client = Groq(
     api_key="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",
 )
-motor = pyttsx3.init()
-r = sr.Recognizer()
+engine = pyttsx3.init()
+r = sr.Recognizer() 
 # Ajustar el umbral de energía para ser más sensible al habla
 r.energy_threshold = 3000  # Valor por defecto es 3000, ajusta según sea necesario
 # Ajustar el umbral de pausa para responder más rápidamente
@@ -19,12 +19,13 @@ r.pause_threshold = 0.5  # Valor por defecto es 0.5 segundos, ajusta según sea 
 r.operation_timeout = 5  # 5 segundos de tiempo de espera, ajusta según sea necesario
 # Palabra clave para activar y comando para terminar
 # Lista de palabras o frases clave para despertar al asistente
-palabras_clave = ["mayordomo", "asistente", "despertate", "dame bola", "IA", "computadora", "esclavo"]
 
+palabras_clave = ["mayordomo", "asistente", "despertate", "dame bola", "IA", "computadora", "esclavo", "ok google"]
+#Aca lo imprime
 print(f"amo.. Di alguna de estas palabras para despertarme: {', '.join(palabras_clave)}")
-
-motor.say(f"amo.. Di alguna de estas palabras para activarme: {', '.join(palabras_clave)}")
-motor.runAndWait()
+#Aca lo dice
+engine.say(f"amo.. Di alguna de estas palabras para activarme: {', '.join(palabras_clave)}")
+engine.runAndWait()
 
 
 comandos_terminacion = ["terminar", "salir", "finalizar", "cerrar", "exit", "end", "stop", "quit", "close", "finish", "leave", "bye", "adios", "adiós", "chao",  "chau","hasta luego", "hasta la vista", "nos vemos", "hasta pronto", "hasta mañana", "hasta la próxima", "hasta la otra", "hasta la otra semana", "hasta la otra vez", "hasta la otra ocasión", "nos vemos", "listo"]
@@ -54,10 +55,10 @@ while True:
                 #                 La comprensión de listas genera un iterable que contiene las palabras clave que se encuentran en el texto.
                 # La función next toma este iterable y devuelve la primera palabra clave coincidente.
                 # any verifica si se ha detectado al menos una palabra clave.
-                # Si any devuelve True, next obtiene la primera palabra clave coincident
+                # Si any devuelve True, next obtiene la primera palabra clave coincidente
                 print(f"¡Activado con la palabra '{palabra_detectada}'!")
-                motor.say(f"Estoy listo para ayudarte, amo. Me has activado con la palabra {palabra_detectada}.")
-                motor.runAndWait()
+                engine.say(f"Estoy listo para ayudarte, amo. Me has activado con la palabra {palabra_detectada}.")
+                engine.runAndWait()
                 break
             else:
                 print("Palabra clave no detectada. Sigo esperando.")
@@ -73,13 +74,13 @@ contador = 0
 while True:
     if contador == 0:
         print("Por favor amo, dígame qué desea saber: ")
-        motor.say("Por favor, dígame qué desea saber: ")
-        motor.runAndWait()
+        engine.say("Por favor, dígame qué desea saber: ")
+        engine.runAndWait()
         contador = 1
     else:
         print("¿Amo, hay algo más en lo que pueda ayudarle?")
-        motor.say("¿Amo, hay algo más en lo que pueda ayudarle?")
-        motor.runAndWait()
+        engine.say("¿Amo, hay algo más en lo que pueda ayudarle?")
+        engine.runAndWait()
 
     with sr.Microphone() as source:
         print("Escuchando...")
@@ -90,8 +91,8 @@ while True:
 
             if any(comando in texto for comando in comandos_terminacion):
                 print("Finalizando el programa. Hasta luego.")
-                motor.say("Adiós, genio de la vida. Recuerde que estoy a su disposición. Hasta luego.")
-                motor.runAndWait()
+                engine.say("Adiós, genio de la vida. Recuerde que estoy a su disposición. Hasta luego.")
+                engine.runAndWait()
                 break
 
             chat_completion = client.chat.completions.create(
@@ -102,8 +103,8 @@ while True:
             )
             respuesta = chat_completion.choices[0].message.content
             print(respuesta)
-            motor.say(respuesta)
-            motor.runAndWait()
+            engine.say(respuesta)
+            engine.runAndWait()
         except sr.WaitTimeoutError:
             print("Tiempo de espera agotado, volviendo a escuchar...")
         except sr.UnknownValueError:
@@ -112,5 +113,5 @@ while True:
             print(f"Error en el servicio de reconocimiento de voz; {e}")
         except Exception as e:
             print("Error al procesar la pregunta:", e)
-            motor.say("Hubo un error al procesar su pregunta.")
-            motor.runAndWait()
+            engine.say("Hubo un error al procesar su pregunta.")
+            engine.runAndWait()

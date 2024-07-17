@@ -1,14 +1,8 @@
 # Generadores de Expresiones en Python
-# Los generadores de expresiones son una característica poderosa y
-# eficiente en Python
-# para crear secuencias de datos de manera concisa.
-# Son similares a las "comprensiones de lista", pero con algunas diferencias 
-# clave en 
-# términos de sintaxis y comportamiento.
-#  A diferencia de las listas, que almacenan todos los elementos a la vez, 
-# los generadores liberan memoria al generar elementos uno a uno.
-# Esto los hace ideales para trabajar con grandes conjuntos de datos 
-# o cuando la memoria es limitada.
+# Los generadores de expresiones son una característica poderosa y eficiente en Python para crear secuencias de datos de manera concisa.
+# Son similares a las "comprensiones de lista", pero con algunas diferencias clave en términos de sintaxis y comportamiento.
+#  A diferencia de las listas, que almacenan todos los elementos a la vez, los generadores liberan memoria al generar elementos uno a uno.
+# Esto los hace ideales para trabajar con grandes conjuntos de datos o cuando la memoria es limitada.
 # Sintaxis Básica
 # La sintaxis de un generador de expresiones es:
 
@@ -55,7 +49,6 @@ print("\n")
 # Nota: El generador se ha agotado después del bucle for anterior
 # Para los siguientes métodos, necesitamos recrear el generador
 cuadrados = (x**2 for x in range(10))
-
 # Método 2: Convertir a lista y luego imprimir
 print("Método 2: Convertir a lista y luego imprimir")
 lista_cuadrados = list(cuadrados)
@@ -66,9 +59,9 @@ cuadrados = (x**2 for x in range(10))  # Recreamos el generador
 print("Método 3: Usar la función print con desempaquetado")
 print(*cuadrados)
 
-# Método 4: Usar comprehensión de lista en print (crea una lista temporal)
+# Método 4: Usar comprension de lista en print (crea una lista temporal)
 cuadrados = (x**2 for x in range(10))  # Recreamos el generador
-print("Método 4: Usar comprehensión de lista en print")
+print("Método 4: Usar comprension de lista en print")
 print([x for x in cuadrados])
 
 # Método 5: Usar join con map (para grandes conjuntos de datos)
@@ -94,8 +87,8 @@ pares = ((i, i**2) for i in range(4))
 # 4. Generador con filtro:
 
 # Este generador filtra los números pares del 0 al 10:
-pares_filtrados = (n for n in range(10) if n % 2 == 0)
-
+pares_filtrados = (x for x in range(100) if x % 5 == 0)
+print(*pares_filtrados)
 
 
 # Comprensiones de listas:

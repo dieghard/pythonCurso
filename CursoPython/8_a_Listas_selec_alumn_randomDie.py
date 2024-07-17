@@ -27,7 +27,7 @@ alumnos_con_ao = [alumno for alumno in lista_alumnos if "a" in alumno or "o" in 
 
 
 # Aplicar una función a cada elemento: Se puede aplicar una operación o función a cada elemento de la lista original.
-lista_alumnos_mayuscula = [alumno.upper() for alumno in lista_alumnos]
+lista_alumnos_mayuscula = [alumno.lower() for alumno in lista_alumnos]
 
 #Filtrar y aplicar una función:
 
