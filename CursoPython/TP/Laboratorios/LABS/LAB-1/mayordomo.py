@@ -47,7 +47,7 @@ while True:
             # Este tipo de construcción genera un iterable de manera eficiente. En este caso, el iterable contiene:
             # True si la palabra actual (palabra) de la lista palabras_clave se encuentra en el texto.
             # False si la palabra actual no se encuentra en el texto.
-            if any(palabra in texto for palabra in palabras_clave): #comprension de listas
+            if any(palabra in texto for palabra in palabras_clave): #Generador de expresion  de listas
             #La función any actúa como un filtro para verificar si hay alguna coincidencia entre las palabras clave y el texto.
             # Su uso es eficiente porque evita iterar sobre toda la lista de palabras clave si no se encuentra ninguna coincidencia.
             # Es útil para simplificar la lógica y evitar código repetitivo.
