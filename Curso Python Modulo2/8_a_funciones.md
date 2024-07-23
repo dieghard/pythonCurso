@@ -85,7 +85,7 @@ print(sumar(5,3)) #Devuelve: 8
 
 # Actividades 💬
 
-## Crear una prama que pasandole el nombre nos salude:
+## Crear una programa que pasandole el nombre nos salude:
 
 ```python
 def saludar(nombre):
@@ -178,5 +178,4 @@ cree una funcion que permita ingresar 3 números y nos muestre cual es el mayor
 
 Generar un programa que permita el ingreso de la cantidad de numeros aleatorios a generar y los muestre.
 
-el numero minimo y el numero maximo
 [VOLVER](/readme.md)
