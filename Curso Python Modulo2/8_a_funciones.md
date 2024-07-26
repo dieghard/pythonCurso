@@ -26,6 +26,53 @@ def nombre_de_la_funcion(parametros):
   `En Python, la convención para nombrar funciones es usar letras minúsculas con palabras separadas por guiones bajos. Esto se conoce como snake_case.`
 - parametros: son variables opcionales que pasamos a la función.
 - return: es la **_palabra clave_** que devuelve valor desde la funcion al llamador.
+---
+## Decoradores de Funciones
+
+Dentro de las funciones podemos "decorarla" para ayudarnos en un futuro a recordar que hace, declarando los datos que espera y la salida que pensamos darle, esto es simplemente visual ya que Python no es fuertemente tipado, por lo que dentro de la funcion tendremos que hacer la logica para que por ejemplo de un str obtengamos en el return un int.
+
+Estos decoradores van en los parametros donde despues del nombre de la variable colocamos ***:*** y el tipo de dato esperado y al final de la declaracion con ***->*** podemos colocar la salida esperada, en este caso texto esperamos que sea un str y valor_de_retorno un int. 
+
+```python
+def transformar_str_int(texto:str)->int:
+    #codigo de la función
+    return valor_de_retorno
+```
+Pero no solo eso, tambien podemos agregarle un atributo extra en los parametros para poner por defecto en caso de que el usuario no coloque nada y sean si o si necesarios para la logica de la funcion. usando la siguiente expresion ***| None = (valor por defecto)***
+```python
+def numero (texto_input:str|None= "Ingrese un numero:")-> int:
+    while True:
+        numero_1 = input (texto_input)
+        if numero_1.isdigit():
+            numero_1 = int(numero_1)
+            if numero_1 > 0:
+                break
+            else:
+                print("El valor ingresado debe ser mayor a 0")
+        else:
+            print("El valor ingresado no es un Nro")
+    return numero_1
+    cantidad = numero("Ingrese la cantidad de veces a calcular:")
+```
+En este caso cuando le pasamos un parametro a nuestra funcion numero() tomará lo que tiene dentro de los parentesis como parametro para imprimir el primer mensaje.
+```python
+def calcular(cantidad:int|None=2):
+    mayor = 0
+    
+    for i in range(cantidad):
+        
+        numero_1 = numero()
+        print(f"El numero ingresado es:{numero_1}")
+        if numero_1 > mayor:
+            mayor = numero_1
+    print(f"El numero mayor es : {mayor}")
+    return
+```
+En este otro ejemplo realizamos una funcion que se encargue de hacer bucles y buscar el mayor entre X cantidad de numeros, en caso de no especificarselo dentro de los parentesis nos dará dos como predeterminado. 
+
+calcular() #Da dos Intentos. 
+
+calcular(5) #Da cinco Intentos.
 
 ---
 
@@ -53,6 +100,8 @@ def sumar(a, b):
 ---
 
 # Funcion Lambda
+
+#### (No las vamos a usar ni a preguntar, pero esta bueno que sepan que existen)
 
 ### Las funciones lambda son una forma de crear funciones anónimas en una sola línea. Son utiles cuando necesitas una funcion por corto periodo de tiempo y no queres definirla con _def_
 
@@ -85,70 +134,13 @@ print(sumar(5,3)) #Devuelve: 8
 
 # Actividades 💬
 
-## Crear una programa que pasandole el nombre nos salude:
+## Crea una funcion que nos salude por consola.
 
-```python
-def saludar(nombre):
-  #Función que saluda a una persona por su nombre
-  print(f"¡Hola {nombre}!")
-# Ejemplo de uso
-saludar("Juan")  # Imprime: ¡Hola Juan!
-saludar("María")  # Imprime: ¡Hola María!
-```
+## Crea una funcion para calcular el área de un cuadrado.
 
-```
-Explicación:
-- La función saludar recibe un parámetro llamado nombre.
-- El código dentro de la función imprime un mensaje de saludo personalizado utilizando el nombre pasado como parámetro.
-- La función se llama dos veces, pasando diferentes nombres como argumentos.
-```
+## Crea una funcion para ordenar una lista de palabras.
 
-## Ejemplo 2: Calcular el área de un cuadrado
-
-```python
-def calcular_area_cuadrado(lado):
-  """Función que calcula el área de un cuadrado."""
-  area = lado * lado
-  return area
-
-# Ejemplo de uso
-lado = 5
-area = calcular_area_cuadrado(lado)
-print(f"El área del cuadrado es: {area}")  # Imprime: El área del cuadrado es: 25
-```
-
-```
-Explicación:
-
-- La función calcular_area_cuadrado recibe un parámetro llamado lado.
-- El código dentro de la función calcula el área del cuadrado elevando el lado al cuadrado.
-- La función utiliza la palabra clave return para devolver el valor del área calculada.
-- La función se llama una vez, pasando el valor del lado como argumento.
-- El valor devuelto por la función se almacena en la variable area.
- -Se imprime un mensaje con el valor del área calculada.
-```
-
-## Ordenar una lista de palabras:
-
-```py
-def ordenar_palabras(lista_palabras):
-#Función que ordena una lista de palabras alfabéticamente.
-lista_palabras.sort()
-return lista_palabras
-
-lista_palabras = input("Ingrese las palabras separadas por comas: ").split(",")
-lista_palabras_ordenadas = ordenar_palabras(lista_palabras)
-print(f"Lista de palabras ordenadas alfabéticamente: {lista_palabras_ordenadas}")
-```
-
-## Función Verificar si un número es par o impar
-
-- Realice un programa que verifique si el numero ingresado por ⌨️ es par o impar.
-
-## Función de Calcular el perimetro de un rectangulo 👶
-
-- Realice un programa que ingresando la base , la altura calcule el perimetro de un rectangulo. (recuerde que la formula es Perimetro = 2 \* (base + altura)
-  y tambien devuelva el area.
+## Función Verificar si un número es par o impar.
 
 ## Función de conversión de Temperatura. (Facil) 👶
 
