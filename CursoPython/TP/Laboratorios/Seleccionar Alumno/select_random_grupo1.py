@@ -1,8 +1,8 @@
 import pprint
 import random
-lista_alumnos = ["Monica", "maricel", "carlos", "guillermo","paula", "fermin", "gonzalo", "javier", "Jonathan", "florencia", "leticia", "shirley", "patricia", "marcelo"]
+lista_alumnos = ["Monica", "maricel", "carlos", "guillermo","paula", "fermin", "gonzalo", "javier", "Jonathan", "florencia", "leticia", "shirley", "marcelo", "emanuel", "pamela", "salvador", "eugenia"]
 print(lista_alumnos)
-alumnos_pasados = ["Monica", "paula", "leticia","gonzalo", "maricel", "shirley"]
+alumnos_pasados = ["Monica", "paula", "leticia","gonzalo", "maricel", "shirley", "guillermo"]
 lista_alumnos = [alumno.upper() for alumno in lista_alumnos]
 print(lista_alumnos)
 alumnos_restantes = [alumno for alumno in lista_alumnos if alumno not in alumnos_pasados]

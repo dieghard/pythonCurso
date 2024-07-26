@@ -1,8 +1,8 @@
 import random
-lista_alumnos = ["salvador", "brisa","cristian", "emanuel", "franco", "camila", "pamela", "eugenia"]
+lista_alumnos = ["brisa","cristian", "emanuel", "franco"]
 lista_alumnos = [alumno.upper() for alumno in lista_alumnos]
 
-alumnos_pasados = ["brisa", "pamela"]
+alumnos_pasados = ["brisa", "franco"]
 
 
 alumnos_restantes = [alumno for alumno in lista_alumnos if alumno not in alumnos_pasados]
