@@ -15,15 +15,15 @@ def calculadora_de_operaciones(numero_1:int ,numero_2:int, operacion:str ):
         print("Escribiste cualquier cosa, menos una operacion")
     #print(resultado)
     return resultado
-print(calculadora_de_operaciones(25,5,"%"))
-print(calculadora_de_operaciones(25,5,"+"))
 
-input_1 = int(input("Ingrese un numero para sumar:"))
-input_2 = int(input("Ingrese un numero para sumar:"))
+
+input_1 = int(input("Ingrese un numero:"))
+input_2 = int(input("Ingrese un numero:"))
 input_operacion = input("Ingrese la operacion a realizar(+,-,*,/,\%\ o suma ,resta ,multiplicacion , division, modulo):")
 
 resultado = calculadora_de_operaciones(input_1,input_2, input_operacion)
 #resultado_2 = calculadora_de_operaciones(15,20,"-")
+print(resultado)
 
 
 
