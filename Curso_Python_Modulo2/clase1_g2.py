@@ -1,3 +1,5 @@
+import funciones as f
+
 def operacion():
     numero_1 = int(input("Ingrese el numero a utilizar:"))
     numero_2 = int(input("Ingrese el numero a utilizar:"))
@@ -24,5 +26,5 @@ def imprimir(parametro):
     print(parametro)
     return
 
-imprimir(input("Ingrese texto:"))
-imprimir("Hola Mundo")
+imprimir(f.validar_texto("Ingresa un HOLA MUNDO:"))
+imprimir(f.validar_texto())
