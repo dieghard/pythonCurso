@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 #Conversion de temperatura
 ## Ejemplo 1
 def sumar(a :int , b:int):
@@ -97,12 +96,11 @@ maximo = int(input("Ingrese el valor máximo del rango: "))
 lista_generada = generar_lista_aleatoria(cantidad, minimo, maximo)
 print(f"Lista de números aleatorios: {lista_generada}")
 
-=======
 #Nuestas funciones
 
 def numero (texto_input:str|None= "Ingrese un numero:")-> int:
     """
-    Funcion para ingresar y validar un numero, 
+    Funcion para ingresar y validar un numero,
     texto_input muestra el mensaje por consola
     """
     while True:
@@ -121,7 +119,7 @@ def numero (texto_input:str|None= "Ingrese un numero:")-> int:
 
 def saludo(nombre:str, apellido:str | None = " ")->str:
     print(f"Hola {nombre}{apellido}")
-    return 
+    return
 saludo("Eugenia", " de Escobar")
 
 
@@ -133,4 +131,3 @@ def area (lado:int | None = 0)->int:
 calculo = numero()
 resultado = area(calculo)
 print(f" El area del cuadrado es: {resultado}")
->>>>>>> 99233409d6f0d261f93065b5327c13c64591f086

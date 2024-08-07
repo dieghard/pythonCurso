@@ -2,7 +2,7 @@
 import pyttsx3
 import speech_recognition as sr
 from groq import Groq
-    
+
 def escuchar():
     r = sr.Recognizer()
     with sr.Microphone() as source:
@@ -19,7 +19,7 @@ def escuchar():
         except sr.RequestError as e:
             print(f"Lo siento, ha habido un problema al intentar comunicarme con el servicio de Google: {e}")
             return None
-        
+
 def hablar(texto):
     engine = pyttsx3.init()
     engine.say(texto)
@@ -28,7 +28,7 @@ def hablar(texto):
 def interactuar_con_ia(prompt):
     if prompt is None:
         return "No se pudo obtener un prompt válido."
-    
+
     client = Groq(
         api_key="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",
     )
@@ -42,7 +42,7 @@ def interactuar_con_ia(prompt):
         model="llama3-8b-8192",
     )
     return chat_completion.choices[0].message.content
-contador = 0
+"""contador = 0
 while True:
     if contador == 0:
         hablar("¡Acabas de iniciar la charla con Groq una Inteligencia Artificial!")
@@ -60,4 +60,4 @@ while True:
         if __name__ == "__main__":
             main()
     else:
-        exit()
+        exit()"""
