@@ -45,7 +45,7 @@ def interactuar_con_ia(prompt):
     return chat_completion.choices[0].message.content
 
 
-def numero (texto_input:str|None= "Ingrese un numero:")-> int:
+def ingresar_numero (texto_input:str|None= "Ingrese un numero:")-> int:
     """
     Funcion para ingresar y validar un numero, \n
     texto_input muestra el mensaje por consola
