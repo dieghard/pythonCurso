@@ -105,7 +105,7 @@ juan.saludar()
 #### Objetivo: Implementar una clase CuentaBancaria que permita a los usuarios realizar operaciones bancarias básicas como depositar, retirar y consultar el saldo.
 
 ### Ejercicio 3: Crear una Clase de Producto
-#### Objetivo: Crear una clase llamada Producto que tenga tres atributos: nombre, precio y cantidad. Y tenga 3 metodos, Actualizar Precio, Actualizar Cantidad y Calcular valor total, el primero modificara el precio del producto, el segundo la cantidad y el ultimo debera multiplicar la cantidad por el precio del producto seleccionado para saber el valor total del inventario.
+#### Objetivo: Crear una clase llamada Producto que tenga tres atributos: nombre, precio y cantidad. Y tenga 3 metodos, Actualizar Precio, Actualizar Cantidad y Calcular valor total, el primero modificara el precio del producto, el segundo la cantidad y el ultimo debera multiplicar la cantidad por el precio del producto seleccionado para saber el valor total del inventario. Y agregar un metodo más para comprar alguno.
 
 ### Ejercicio 4: Crear una Clase de Contador
 #### Objetivo: Crear una clase llamada Contador que tenga un atributo cuenta que empieza en 0. Y que posea 4 metodos, Incrementar(sumará 1), Decrementar(restará 1, no admite negativos osea hasta maximo 0), Mostrar Contador(deberá devolver el valor actual de contador) y Reiniciar(volverá a cero el contador)

@@ -3,6 +3,7 @@
 import pyttsx3
 import speech_recognition as sr
 from groq import Groq
+from typing import Callable, Optional
     
 def escuchar():
     r = sr.Recognizer()
@@ -133,5 +134,63 @@ def validar_texto(texto_input:str | None="Ingrese un texto: ", validar_vacio : b
         else:
             break
     return texto
-
-#
+#NO USAR 😊
+def menu(
+    texto_menu: str, 
+    opcion_1: Optional[str] = "█", 
+    opcion_2: Optional[str] = "█", 
+    opcion_3: Optional[str] = "█", 
+    opcion_4: Optional[str] = "█", 
+    opcion_5: Optional[str] = "█", 
+    opcion_6: Optional[str] = "█", 
+    objeto: Optional[object] = "Falta el objeto",
+    metodo_1: Optional[Callable] = None, 
+    metodo_2: Optional[Callable] = None, 
+    metodo_3: Optional[Callable] = None, 
+    metodo_4: Optional[Callable] = None, 
+    metodo_5: Optional[Callable] = None, 
+    metodo_6: Optional[Callable] = None
+) -> None:
+    """
+    while True:
+        opcion = input(texto_menu).upper()
+        if opcion == opcion_1 or opcion == opcion_2 or opcion == opcion_3 or opcion == opcion_4 or opcion == opcion_5 or opcion == opcion_6:
+            if opcion == opcion_1:
+                metodo_1
+            if opcion == opcion_2:
+                metodo_2
+            if opcion == opcion_3:
+                metodo_3
+            if opcion == opcion_4:
+                metodo_4
+            if opcion == opcion_5:
+                metodo_5
+            if opcion == opcion_6:
+                metodo_6
+            if opcion == "F":
+                exit("Finalizando Sesion con Exito")
+        else:
+            print("Ingresaste una opcion incorrecta (D,R,S,R,F)")
+            print("\n"*10)
+    """
+    texto_menu = texto_menu + "\n-Si quieres finalizar sesion (F) \n-Opcion:"
+    while True:
+        opcion = input(texto_menu).upper()
+        if opcion == opcion_1 or opcion == opcion_2 or opcion == opcion_3 or opcion == opcion_4 or opcion == opcion_5 or opcion == opcion_6:
+            if opcion == opcion_1:
+                metodo_1
+            if opcion == opcion_2:
+                metodo_2
+            if opcion == opcion_3:
+                metodo_3
+            if opcion == opcion_4:
+                metodo_4
+            if opcion == opcion_5:
+                metodo_5
+            if opcion == opcion_6:
+                metodo_6
+            if opcion == "F":
+                exit("Finalizando Sesion con Exito")
+        else:
+            print("Ingresaste una opcion incorrecta (D,R,S,R,F)")
+            print("\n"*10)
