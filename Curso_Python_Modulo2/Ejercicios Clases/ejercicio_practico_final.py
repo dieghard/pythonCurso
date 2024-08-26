@@ -47,7 +47,7 @@ class Circulo:
         self.radio = radio
     
     def calcular_area(self):
-        return 3.14159 * radio ** 2
+        return 3.14159 * radio ** 2 #La formula matematica es Pi por Radio al cuadrado el "** 2" es cuadrado.
 
 mi_circulo = Circulo(5)
 print("El área del círculo es: " mi_circulo.calcular_area())
