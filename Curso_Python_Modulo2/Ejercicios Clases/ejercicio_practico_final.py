@@ -1,3 +1,10 @@
+"""
+Nombre y Apellido: 
+Edad:
+DNI:
+Email:
+"""
+
 #Objetivo del ejercicio: Arreglar los siguientes programas con errores:
 
 #Ejercicio 1: Saludar usuario. 
@@ -16,14 +23,15 @@ PROMEDIO = num1 + num2 + num3 / 3
 print(f"El promedio es: {PROMEDIO}")
 
 #Ejercicio 3: Verificar si el estudiante aprobo:
-#Cantidad de errores: 2
+#Cantidad de errores: 3
 
 calificacion = input("Ingrese la calificación del estudiante: ")
-
+texto = "El estudiante ha aprobado"
 if calificacion <= 6:
-    print("El estudiante ha aprobado")
+    print(texto)
 else:
-    print("El estudiante ha reprobado")
+    texto= "El estudiante ha reprobado"
+print(texto)
 
 #Ejercicio 4: Lista de Compras.
 #Cantidad de errores: 1
@@ -40,16 +48,16 @@ for i in range(lista_compras):
     print("- " + lista_compras[i])
 
 #Ejercicio 5: Clase Circulo.
-#Cantidad de errores: 3
+#Cantidad de errores: 5
 
 class Circulo:
-    def __init__(radio):
+    def init(radio):
         self.radio = radio
-    
+
     def calcular_area(self):
         return 3.14159 * radio ** 2 #La formula matematica es Pi por Radio al cuadrado el "** 2" es cuadrado.
 
-mi_circulo = Circulo(5)
+Mi_circulo = Circulo(5)
 print("El área del círculo es: " mi_circulo.calcular_area())
 
 
@@ -80,3 +88,10 @@ def repetir_cadena(cadena, veces):
 texto = input("Ingrese un texto: ")
 repeticiones = input("¿Cuántas veces desea repetir el texto? ")
 print(f"El texto repetido es: {repetir_cadena}")
+
+#Ejercicio 9: Crear una clase llamada Persona.
+#Crea tres instancias de la clase persona:
+# Gaspar, 23, Profesor.
+# Diego, 45, Desarrollador de Software.
+# Tu nombre, tu edad, tu profesion.
+# Crea metodos para imprimir el nombre, la edad y la profesion de cada persona.
