@@ -153,6 +153,3 @@ git config --global --list
 https://gprm.itsvg.in/
 https://rahuldkjain.github.io/gh-profile-readme-generator/
 https://profilinator.rishav.dev/
-
----
-# 1- Introduccion a MD.
