@@ -34,7 +34,7 @@ Ejemplo: **main o master** suelen ser las ramas principales y por lo general se 
 > Proceso por el cual se combinan los cambios de una rama con otra.
 
 ### Pull Request (PR):
-> Solicitud para funcionar cambios de una rama en otra, utilizada en Github principalmente para colaborar y revisar codigo.
+> Solicitud para fusionar cambios de una rama en otra, utilizada en Github principalmente para colaborar y revisar codigo.
 
 ### Clone y Fork:
 > - ***Clone:*** Copiar un repositorio en local.
@@ -153,3 +153,75 @@ git config --global --list
 https://gprm.itsvg.in/
 https://rahuldkjain.github.io/gh-profile-readme-generator/
 https://profilinator.rishav.dev/
+https://github.com/Ileriayo/markdown-badges?tab=readme-ov-file#table-of-contents
+
+## 7 - GitIgnore.
+
+#### El archivo .gitignore es crucial para mantener un repositorio limpio y evitar subir archivos innecesarios o sensibles. Este archivo le indica a Git qué archivos o directorios debe ignorar en el proceso de seguimiento de cambios. Esto es especialmente útil para archivos generados automáticamente, archivos de configuración locales o secretos, y bibliotecas externas.
+
+### ¿Por qué usar .gitignore?
+- Mantiene el repositorio limpio: Evita que archivos innecesarios se suban al repositorio, reduciendo el desorden.
+- Protege información sensible: Evita que credenciales, claves de API, o archivos de configuración privada sean expuestos.
+- Reduce conflictos: Al ignorar archivos específicos del entorno, se minimizan los conflictos al fusionar ramas.
+
+### Como crear y usar el archivo .gitignore:
+
+1. Crear un archivo con el nombre .gitignore en la raiz de tu proyecto.
+2. Añadir archivos o directorios al .gitignore:
+   - Para ignorar archivos o carpetas específicas, añade sus nombres o rutas:
+ ```
+
+# Ignorar todos los archivos .log
+*.log
+
+# Ignorar la carpeta de configuración local
+/config/
+
+# Ignorar archivos de entorno
+.env
+ ```
+3. Aplicar los cambios en el repositorio:
+```
+git add .gitignore
+git commit -m "Añadir archivo .gitignore para ignorar archivos no deseados"
+```
+4. Tener en cuenta que los archivos ya versionados no se eliminarán del repositorio automáticamente cuando se añaden al .gitignore. Es necesario eliminarlos manualmente.
+
+## 8. Buenas prácticas al usar Git.
+1. ***Realiza commits Pequeños y Frecuentes***: Haz commits de cambios pequeños y relacionados para mantener el historial de commits limpio y fácil de seguir. Esto facilita la revisión del código y la resolución de conflictos.
+2. ***Escribe mensajes de commit claros***: Un buen mensaje de commit debe ser descriptivo y responder a la pregunta "¿Qué cambios introduce este commit?". Ejemplo: "Corrige el error de validación en el formulario de registro".
+3. ***Usar Ramas para nuevas funcionalidades y correcciones***: Trabaja en ramas separadas (feature branches) para cada nueva funcionalidad o corrección de errores. Esto permite un flujo de trabajo limpio y evita conflictos en el código principal.
+4. ***Mantén la Rama main o master Limpia y Estable***: La rama principal debe estar siempre en un estado funcional y listo para producción. Asegúrate de probar los cambios en las ramas de características antes de fusionarlos con main o master.
+5. ***Revisa y prueba antes de hacer merge.***
+6. ***Sincroniza tu Repositorio Local Regularmente***
+---
+## EXTRA: Como funciona un esquema de Versiones Semantico o SemVer.
+#### Muchos de nosotros vimos archivos con nombres del tipo "mi_archivo 1.20.3" esto es lo que se conoce como versionado semantico y ayuda a los desarrolladores y a los usuarios a entender el estado de un software y los cambios que se han realizado en diferentes versiones. Cada numero tiene un significado especifico:
+
+## MAJOR.MINOR.PATCH
+1. MAJOR(Versión Principal):
+   1. El primer número indica una versión principal (mayor). Se incrementa cuando hay cambios significativos o incompatibles con versiones anteriores.
+   2. Ejemplos: 1.0.0 / 2.0.0
+   3. Estos cambios suelen incluir:
+      1. Reescrituras completas del software.
+      2. Nuevas características que no son compatibles con las versiones anteriores.
+      3. Eliminación de funcionalidades obsoletas.
+2. MINOR(Versión Menor):
+   1. El segundo número indica una versión menor. Se incrementa cuando se agregan nuevas características que son compatibles con la versión actual, pero no alteran su funcionamiento.
+   2. Ejemplo: 1.1.0 / 1.5.0
+   3. Estos cambios suelen incluir:
+      1. Nuevas características o funcionalidades.
+      2. Mejoras que no afectan la compatibilidad.
+      3. Modificaciones que no rompen las características existentes.
+3. PATCH(Revision o parche):
+   1. El tercer número indica una revisión o parche. Se incrementa cuando se realizan correcciones de errores o pequeños cambios que no afectan las características ni la compatibilidad con la versión actual.
+   2. Ejemplo: 1.1.1 / 1.9.23
+   3. Estos cambios suelen incluir:
+      1. Corrección de errores.
+      2. Mejoras menores de rendimiento.
+      3. Ajustes y pequeños arreglos que no añaden nuevas funcionalidades.
+### Versiones Adicionales.
+A veces, se agregan etiquetas adicionales como alpha, beta, rc (release candidate), para indicar versiones de pre-lanzamiento o desarrollo:
+- 1.20.3-alpha: Una versión alpha de la versión 1.20.3, generalmente una versión muy temprana para pruebas.
+- 1.20.3-beta: Una versión beta de la versión 1.20.3, más estable que alpha pero aún en pruebas.
+- 1.20.3-rc.1: Un "release candidate" (candidato a lanzamiento), indicando que está listo para una posible liberación final.
