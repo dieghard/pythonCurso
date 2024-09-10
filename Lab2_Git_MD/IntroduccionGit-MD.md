@@ -155,6 +155,7 @@ https://rahuldkjain.github.io/gh-profile-readme-generator/
 https://profilinator.rishav.dev/
 https://github.com/Ileriayo/markdown-badges?tab=readme-ov-file#table-of-contents
 
+
 ## 7 - GitIgnore.
 
 #### El archivo .gitignore es crucial para mantener un repositorio limpio y evitar subir archivos innecesarios o sensibles. Este archivo le indica a Git qué archivos o directorios debe ignorar en el proceso de seguimiento de cambios. Esto es especialmente útil para archivos generados automáticamente, archivos de configuración locales o secretos, y bibliotecas externas.
@@ -225,6 +226,9 @@ A veces, se agregan etiquetas adicionales como alpha, beta, rc (release candidat
 - 1.20.3-alpha: Una versión alpha de la versión 1.20.3, generalmente una versión muy temprana para pruebas.
 - 1.20.3-beta: Una versión beta de la versión 1.20.3, más estable que alpha pero aún en pruebas.
 - 1.20.3-rc.1: Un "release candidate" (candidato a lanzamiento), indicando que está listo para una posible liberación final.
+
+## EXTRA 2: Aprende Git Jugando.
+Los comandos de git pueden ser un dolor de cabeza, por eso hay paginas para aprender y familiarizarse con ellos de manera didactica, aquí un ejemplo: https://learngitbranching.js.org/?locale=es_AR
 ---
 <h1 style = "color: #6485de ;text-decoration: underline "> Introduccion a MD. 📑</h1>
 Los archivos .md (Markdown) son ampliamente utilizados en la documentación de software, escritura de README en repositorios de GitHub, blogs técnicos, y mucho más debido a su simplicidad y capacidad de conversión a HTML.
