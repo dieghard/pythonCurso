@@ -9,6 +9,7 @@ if numero_aleatorio == 1: #Para que sea mas facil la logica, cambiamos los numer
     eleccion_PC = "CARA"
 else: #Si numero_aleatorio es 2:
     eleccion_PC = "CRUZ"
+#Hola loco
 
 eleccion_usuario = input("Selecciona CARA(1) o CRUZ(2) para jugar: ") #Le pedimos al usuario ingresar su eleccion, dandole la opcion de escribir o ingresar el numero
 
@@ -18,7 +19,7 @@ if eleccion_usuario == "1" or eleccion_usuario == "CARA": #Para que sea mas faci
     eleccion_usuario = "CARA"
 elif eleccion_usuario == "2" or eleccion_usuario == "CRUZ":
     eleccion_usuario = "CRUZ"
-else: 
+else:
     print("Pusiste otra cosa") #Si el usuario no coloco 1, 2, Cara o Cruz pasa de largo y termina el programa
     exit()
 
