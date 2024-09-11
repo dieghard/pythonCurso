@@ -1,4 +1,4 @@
-<h1><span style= "color: red; text-decoration: underline">Laboratorio 1:</span> Introduccion a Git y Archivos MD <h1>
+<h1><span style= "color: red; text-decoration: underline">Laboratorio 3:</span> Introduccion a Git y Archivos MD <h1>
 
 ---
 
