@@ -1,5 +1,5 @@
 
-<h1 align="center">Hola 👋, Soy Gaspar Oddovero H.</h1>
+<h1 align="center">Hola 👋 Soy Gaspar Oddovero H.</h1>
 <h3 align="center">Licenciado en Informatica y Desarrollador.</h3>
 
 
@@ -39,7 +39,6 @@ Me encuentro dando clases en la Universidad Popular de General Levalle ,actualme
 [![Portfolio](https://img.shields.io/badge/Portfolio-%23000000.svg?style=for-the-badge&logo=firefox&logoColor=#FF7139)](https://gasparoddovero-portfolio.netlify.app/)
 [![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?style=for-the-badge&logo=Instagram&logoColor=white)](https://instagram.com/gasparoddovero)
 [![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/gaspar-o-122803175/) 
-[![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?style=for-the-badge&logo=Instagram&logoColor=white)](https://instagram.com/goh.dev) 
 
 </div>
 
