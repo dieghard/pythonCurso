@@ -1,4 +1,6 @@
-<h1 style = "color: #6485de ;text-decoration: underline "> Introduccion a MD. 📑</h1>
+<h1 style = "color: yellow ;text-decoration: underline; "> Introduccion a MD. 📑</h1>
+
+
 Los archivos .md (Markdown) son ampliamente utilizados en la documentación de software, escritura de README en repositorios de GitHub, blogs técnicos, y mucho más debido a su simplicidad y capacidad de conversión a HTML.
 
 ## 2. ¿Qué es Markdown?
@@ -57,10 +59,13 @@ Combinando ambas: ***texto en negrita y cursiva*** o ___texto en negrita y cursi
 Tachado: ~~texto tachado~~
 ```
 
-Negrita: **texto en negrita** o __texto en negrita__ `<br>`
-Cursiva: *texto en cursiva* o _texto en cursiva_ `<br>`
-Combinando ambas: ***texto en negrita y cursiva*** o ___texto en negrita y cursiva___ `<br>`
+Negrita: **texto en negrita** o __texto en negrita__ <br>
+Cursiva: *texto en cursiva* o _texto en cursiva_ <br>
+Combinando ambas: ***texto en negrita y cursiva*** o ___texto en negrita y cursiva___ <br>
 Tachado: ~~texto tachado~~
+
+
+
 3. Listas:
 
 ```md
@@ -85,28 +90,33 @@ Listas ordenadas:
 Listas desordenadas:
 
 - Elemento 1
+    - SubElemnto 1
+        - SubSub elemnto 2
 - Elemento 2
 - Elemento 3
 
 4. Citas: Se usan el símbolo > para citar texto.
 
-> Esto es una cita en Markdown.
+> Esto es una cita ___en Markdown___.
 
 5. Enlaces:
 
 ```md
 [texto del enlace](URL)
-
+[Visita GitHub](https://github.com)
 ```
 
 [Visita GitHub](https://github.com)
+
 6. Imagenes:
 
 ```md
 ![texto alternativo](URL de la imagen)
 ```
 
-![Logo de GitHub](https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png)
+![Imagen: Logo de GitHub](https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png)
+
+![Imagen: Receta](/Lab2_Git_MD/Ultimasrecetas.png)
 
 7. Bloques de Codigo:
 
@@ -120,6 +130,7 @@ haciendolo más visible que con texto plano.
 ```python
 def funcion():
     print("Hola Mundo")
+
 ```
 
 8. Tablas: Puedes crearlas utilizando | para columnas y - para encabezados:
