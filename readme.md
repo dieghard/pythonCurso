@@ -66,10 +66,6 @@ Objetivos:
 
 ---
 
-# Contenido del Curso Desarrollo Web Frontend
-
----
-
 # Contenido del Charla IA
 
 ### [Ejemplos Prompt](/Inteligencia%20Artificial/prompt.md)
